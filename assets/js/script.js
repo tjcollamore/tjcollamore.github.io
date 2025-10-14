@@ -12,8 +12,8 @@ function showTab(tabId) {
 
   // Title
   const titles = {
-    home: 'April Collamore',
-    experiences: 'Academic & Work Experiences',
+    home: 'TJ Collamore',
+    experiences: 'Experiences',
     about: 'About Me'
   };
   document.getElementById('page-title').textContent = titles[tabId];
@@ -131,7 +131,6 @@ fetch('profile.json')
           <div class="about-content">
             <div class="photo-wrapper">
               <img src="images/profile.jpg" class="about-photo" alt="My Photo">
-              <img src="images/cornell_logo.png" class="about-logo" alt="Cornell Logo">
             </div>
             <div class="about-right">
               <p class="about-bio">${text
