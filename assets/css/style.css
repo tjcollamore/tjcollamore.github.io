@@ -1,20 +1,292 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f4;
+/* variables & reset */
+:root {
+  --primary: #4A90E2;
+  --bg: #EAF4FF;
+  --fg: #333;
+  --muted: #666;
+  --radius: 8px;
+  --transition: 0.3s ease;
 }
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* 1) Make the header itself white across the entire viewport */
 header {
-  background: #333;
-  color: white;
-  padding: 1em;
+  background-color: white;    /* instead of putting this on .container */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 10;
+}
+
+/* 2) Constrain only the inner .container to your max‑width */
+header .container {
+  max-width: 960px;            /* or whatever you prefer */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+#page-title {
+  flex: 0 0 auto;     /* don’t grow or shrink */
+  margin: 0;           /* no extra bottom margin */
+}
+
+nav {
+  flex: 0 1 auto;      /* take only as much space as needed */
+}
+
+nav ul {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap;    /* keep everything on one line */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* bullets between items */
+nav li + li::before {
+  content: "•";
+  color: var(--muted);
+  margin: 0 0.5rem;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.nav-btn:hover {
+  background: rgba(74,144,226,0.1);
+  color: var(--primary);
+}
+.nav-btn.active {
+  color: var(--primary);
+  background: rgba(74,144,226,0.15);
+}
+
+/* tab handling */
+.tab { display: none; }
+.tab.active { display: block; }
+
+/* home */
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.home-intro {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--fg);
+  text-align: center;
+  max-width: 700px;
+}
+.slideshow-container {
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.slide {
+  width: 100%;
+  display: none;
+  object-fit: cover;
+}
+.slideshow-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.slideshow-buttons button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.slideshow-buttons button:hover {
+  background: #357ABD;
+}
+
+/* experiences timeline */
+.timeline {
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+.timeline-entry {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.timeline-logo {
+  width: 60px;
+  height: auto;
+}
+.timeline-date {
+  font-size: 0.875rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.read-more-btn {
+  grid-column: 1 / -1;
+  justify-self: end;
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.read-more-btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 2rem;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* about */
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.photo-wrapper {
+  position: relative;
+  width: 350px;       /* width of your profile image */
+  flex-shrink: 0;
+  overflow: visible
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);      /* same radius as your theme */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-logo {
+  position: absolute;
+  top: 10px;            /* aligns top of seal with top of photo */
+  left: 10px;      /* shifts the seal left so it overlaps */
+  width: 125px;      /* tweak to taste */
+  height: auto;
+  z-index: 2;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.about-bio {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.6;
+  white-space: pre-wrap;   /* turns each newline in your text file into a <br> */
+}
+
+.nav-btn i,
+.slideshow-buttons button i {
+  margin-right: 0.5rem;
+  font-size: 1.1em;
+}
+
+/* Inline project boxes under each experience */
+.project-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
   text-align: center;
 }
-nav a {
-  color: #ddd;
-  margin: 0 1em;
-  text-decoration: none;
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin: 0.5rem 0;
 }
-main {
-  padding: 2em;
+
+.project-read-more-btn {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.project-read-more-btn:hover {
+  background: #357abd;
 }
