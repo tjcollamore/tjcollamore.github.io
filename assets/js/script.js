@@ -158,7 +158,7 @@ function startSlideshow() {
 
 // modal
 function openModal(idx) {
-  fetch('profile.json')
+  fetch('assets/js/profile.json')
     .then(r => r.json())
     .then(data => {
       const proj = data.experiences[idx];
@@ -183,7 +183,7 @@ function closeModal() {
 
 // new helper for project‑specific modals
 function openProjectModal(expIdx, projIdx) {
-  fetch("profile.json")
+  fetch("assets/js/profile.json")
     .then(res => res.json())
     .then(data => {
       const proj = data.experiences[expIdx].projects[projIdx];
