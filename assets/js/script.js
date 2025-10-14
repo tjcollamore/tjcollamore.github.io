@@ -12,7 +12,7 @@ function showTab(tabId) {
 
   // Title
   const titles = {
-    home: 'TJ Collamore',
+    projects: 'Projects',
     experiences: 'Experiences',
     about: 'About Me'
   };
