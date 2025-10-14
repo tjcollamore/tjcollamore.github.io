@@ -1,0 +1,60 @@
+{
+  "home": "A student-athlete at Westford Academy, passionate about running, learning, and building software.",
+  "about": "text/about.txt",
+  "experiences": [
+    {
+      "season": "Fall",
+      "year": 2025,
+      "title": "title 1",
+      "logo": "images/image1.png",
+      "shortDescription": "short description",
+      "hideReadMore": true
+    },
+    {
+      "season": "Summer",
+      "year": 2024,
+      "end": "Present",
+      "title": "Data Science Intern @ BAE Systems",
+      "logo": "images/bae_logo.png",
+      "shortDescription": "Worked on cutting‑edge AI and automation tools for internal productivity.",
+      "hideReadMore": false,
+      "projects": [
+        {
+          "title": "title 1",
+          "image": "images/image2.png",
+          "description": [
+            "description line 1",
+            "description line 2"
+          ],
+          "skills": ["x", "y"]
+        },
+        {
+          "title": "title 2",
+          "image": "images/image3.png",
+          "description": [
+            "I presented our comparison of open‑source solutions vs. Dataiku to the CIO, which helped secure executive support."
+          ],
+          "skills": ["a", "b", "c"]
+        },
+      ]
+    },
+    {
+      "season": "Summer",
+      "year": 2023,
+      "title": "title 3",
+      "logo": "images/image4.png",
+      "shortDescription": "description 4",
+      "hideReadMore": false,
+      "projects": [
+        {
+          "title": "project title 1",
+          "image": "images/image5.png",
+          "description": [
+            "description"
+          ],
+          "skills": ["j", "k", "l"]
+        }
+      ]
+    }
+  ]
+}
