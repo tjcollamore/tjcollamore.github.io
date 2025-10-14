@@ -20,7 +20,7 @@ function showTab(tabId) {
 }
 
 // load data & populate
-fetch('profile.json')
+fetch('assets/js/profile.json')
   .then(r => r.json())
   .then(data => {
     // HOME
