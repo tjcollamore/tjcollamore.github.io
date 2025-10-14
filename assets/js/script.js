@@ -16,7 +16,7 @@ function showTab(tabId) {
     experiences: 'Experiences',
     about: 'About Me'
   };
-  document.getElementById('page-title').textContent = titles[tabId];
+  //document.getElementById('page-title').textContent = titles[tabId];
 }
 
 // load data & populate
