@@ -3,20 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TJ Collamore – Home</title>
+  <title>TJ Collamore</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to TJ Collamore's Website</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="projects.html">Projects</a> |
-      <a href="about.html">About</a>
-    </nav>
+    <div class="container">
+    <h1 id="page-title">TJ Collamore</h1>
+      <nav>
+        <ul>
+          <li>
+            <button data-tab="home" class="nav-btn active">
+              <i class="fa-solid fa-briefcase"></i> Projects
+            </button>
+          </li>
+          <li>
+            <button data-tab="experiences" class="nav-btn">
+              <i class="fa-solid fa-briefcase"></i> Experiences
+            </button>
+          </li>
+          <li>
+            <button data-tab="about" class="nav-btn">
+              <i class="fa-regular fa-heart"></i> About Me
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <p>This site will showcase my academic and sports achievements.</p>
+  <main class="container">
+    <section id="home" class="tab active">Loading…</section>
+    <section id="experiences" class="tab">Loading…</section>
+    <section id="about" class="tab">Loading…</section>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
