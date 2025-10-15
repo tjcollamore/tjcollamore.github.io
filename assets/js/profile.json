@@ -95,11 +95,11 @@
       ]
     },
     {
-      "season": "Summer",
+      "season": "Spring",
       "year": 2023,
       "title": "title 3",
-      "logo": "images/image4.png",
-      "shortDescription": "description 4",
+      "logo": "assets/images/pacman.png",
+      "shortDescription": "An 3-level implementation of Pac-man using Scratch. The 1st board contains my initials. A 2nd user can influence one of the ghosts.",
       "hideReadMore": false,
       "projects": [
         {
