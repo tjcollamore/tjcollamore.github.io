@@ -61,7 +61,7 @@
       "year": 2023,
       "title": "Pac-Man in Scratch",
       "logo": "assets/images/pacman.png",
-      "shortDescription": "Implemented dot collection, 2 ghost enemies, level transitions, 3 levels, scoring, custom board with my initials, a secret compartment in the 3rd level.",
+      "shortDescription": "Implemented dot collection, 2 ghost enemies, level transitions, 3 levels, scoring, custom board with my initials, and a secret compartment in the 3rd level.",
       "hideReadMore": false,
       "projects": [
         {
@@ -70,9 +70,7 @@
           "buttonLabel": "Play",
           "embed": "<iframe src='https://scratch.mit.edu/projects/820765977/embed' allowtransparency='true' width='485' height='402' frameborder='0' scrolling='no' allowfullscreen></iframe>",
           "description": [
-            "Recreated the classic Pac-Man arcade game in MIT Scratch.",
-            "Implemented dot collection, 2 ghost enemies, level transitions, 3 levels, scoring, custom board with my initials, a secret compartment in the 3rd level",
-            "Designed keyboard controls, animations, and a restart system."
+            "Recreated the classic Pac-Man arcade game in MIT Scratch."
           ],
           "skills": ["Scratch", "Game Logic", "UI Design", "Animations"]
         }
