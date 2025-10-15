@@ -290,3 +290,13 @@ nav li + li::before {
 .project-read-more-btn:hover {
   background: #357abd;
 }
+
+.modal-embed {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.modal-embed iframe {
+  max-width: 100%;
+  height: auto;
+}
+

@@ -43,14 +43,21 @@ function openModalFromArray(array, idx) {
 function openProjectModalFromArray(array, expIdx, projIdx) {
   const proj = array[expIdx].projects[projIdx];
   const body = document.getElementById("modal-body");
+
+  const embed = proj.embed
+    ? `<div class="modal-embed">${proj.embed}</div><hr>`
+    : "";
+
   body.innerHTML = `
     <h2>${proj.title}</h2>
+    ${embed}
     ${proj.description.map(p => `<p>${p}</p>`).join("")}
     <h4>Skills:</h4>
     <ul>${proj.skills.map(s => `<li>${s}</li>`).join("")}</ul>
   `;
   document.getElementById("modal").style.display = "flex";
 }
+
 
 function closeModal() {
   document.getElementById("modal").style.display = "none";
@@ -100,9 +107,9 @@ function renderTimeline(containerId, dataArray) {
                         <h4>${proj.title}</h4>
                         <img src="${proj.image}" alt="${proj.title}" class="project-image"/>
                         <button 
-                          class="project-read-more-btn" 
+                          class="project-read-more-btn"
                           onclick="openProjectModalFromArray(data.${containerId}, ${expIdx}, ${projIdx})">
-                          Read More
+                          ${proj.buttonLabel || "Read More"} 
                         </button>
                       </div>
                     `).join("")}
