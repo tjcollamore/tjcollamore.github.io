@@ -55,6 +55,26 @@
           "skills": ["j", "k", "l"]
         }
       ]
+    },
+    {
+      "season": "Fall",
+      "year": 2023,
+      "title": "Pac-Man in Scratch",
+      "logo": "images/scratch.png",
+      "shortDescription": "Built a full Pac-Man clone using MIT Scratch. Features keyboard controls, enemy ghosts, and level transitions.",
+      "hideReadMore": false,
+      "projects": [
+        {
+          "title": "Pac-Man (MIT Scratch)",
+          "image": "images/scratch-pacman-thumbnail.png",
+          "description": [
+            "Recreated the classic Pac-Man arcade game in MIT Scratch.",
+            "Implemented dot collection, 4 ghost enemies, level transitions, and scoring.",
+            "Designed keyboard controls, animations, and a restart system."
+          ],
+          "skills": ["Scratch", "Game Logic", "UI Design", "Animations"]
+        }
+      ]
     }
   ],
   "experiences": [
@@ -95,11 +115,11 @@
       ]
     },
     {
-      "season": "Spring",
+      "season": "Summer",
       "year": 2023,
       "title": "title 3",
-      "logo": "assets/images/pacman.png",
-      "shortDescription": "An 3-level implementation of Pac-man using Scratch. The 1st board contains my initials. A 2nd user can influence one of the ghosts.",
+      "logo": "images/image4.png",
+      "shortDescription": "description 4",
       "hideReadMore": false,
       "projects": [
         {
