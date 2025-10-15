@@ -194,7 +194,7 @@ nav li + li::before {
   border-radius: var(--radius);
   padding: 2rem;
   max-width: 700px;
-  max-height: 80vh;
+  max-height: 90vh;
   overflow-y: auto;
   position: relative;
 }
@@ -204,6 +204,23 @@ nav li + li::before {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+.modal-embed {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.modal-embed iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 402px;
+}
+
+.skills-line {
+  margin-top: 0;
+  font-style: italic;
+  color: #444;
+}
+
 
 /* about */
 .about-content {
@@ -291,17 +308,3 @@ nav li + li::before {
   background: #357abd;
 }
 
-.modal-embed {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.modal-embed iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-.skills-line {
-  margin-top: 0;
-  font-style: italic;
-  color: #444;
-}
