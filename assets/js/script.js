@@ -53,7 +53,7 @@ function openProjectModalFromArray(array, expIdx, projIdx) {
     ${embed}
     ${proj.description.map(p => `<p>${p}</p>`).join("")}
     <h4>Skills:</h4>
-    <ul>${proj.skills.map(s => `<li>${s}</li>`).join("")}</ul>
+    <p class="skills-line">${proj.skills.join(", ")}</p>
   `;
   document.getElementById("modal").style.display = "flex";
 }
