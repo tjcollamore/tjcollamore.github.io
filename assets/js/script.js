@@ -170,8 +170,8 @@ fetch('assets/js/profile.json')
             </div>
             <div class="about-right">
               <p class="about-bio">${text
-                .replace(/\\n/g, '<br>')
-                .replace(/\\[([^\\]]+)\\]\\(([^\\)]+)\\)/g, '<a href="$2" target="_blank">$1</a>')}
+                .replace(/\n/g, '<br>')
+                .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')}                                     
               </p>
             </div>
           </div>
