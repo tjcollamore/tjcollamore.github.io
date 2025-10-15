@@ -60,15 +60,15 @@
       "season": "Spring",
       "year": 2023,
       "title": "Pac-Man in Scratch",
-      "logo": "assets/images/scratch.png",
-      "shortDescription": "Built a full Pac-Man clone using MIT Scratch. Features keyboard controls, enemy ghosts, and level transitions.",
+      "logo": "assets/images/pacman.png",
+      "shortDescription": "Implemented dot collection, 2 ghost enemies, level transitions, 3 levels, scoring, custom board with my initials, a secret compartment in the 3rd level.",
       "hideReadMore": false,
       "projects": [
         {
           "title": "Pac-Man (MIT Scratch)",
           "image": "images/scratch-pacman-thumbnail.png",
           "buttonLabel": "Play",
-          "embed": "<iframe src='https://scratch.mit.edu/projects/926468164/embed' allowtransparency='true' width='485' height='402' frameborder='0' scrolling='no' allowfullscreen></iframe>",
+          "embed": "<iframe src='https://scratch.mit.edu/projects/820765977/embed' allowtransparency='true' width='485' height='402' frameborder='0' scrolling='no' allowfullscreen></iframe>",
           "description": [
             "Recreated the classic Pac-Man arcade game in MIT Scratch.",
             "Implemented dot collection, 2 ghost enemies, level transitions, 3 levels, scoring, custom board with my initials, a secret compartment in the 3rd level",
