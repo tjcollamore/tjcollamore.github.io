@@ -300,3 +300,8 @@ nav li + li::before {
   height: auto;
 }
 
+.skills-line {
+  margin-top: 0;
+  font-style: italic;
+  color: #444;
+}
