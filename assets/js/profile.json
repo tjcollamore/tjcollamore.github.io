@@ -11,30 +11,33 @@
       "hideReadMore": true
     },
     {
+      "season": "Fall",
+      "year": 2025,
+      "title": "My website",
+      "logo": "assets/images/blackjack.png",
+      "shortDescription": "short description",
+      "hideReadMore": true
+    },
+    {
       "season": "Summer",
-      "year": 2024,
+      "year": 2025,
       "end": "Present",
-      "title": "title",
-      "logo": "images/image4.png",
+      "title": "Blackjack",
+      "logo": "assets/images/blackjack.png",
       "shortDescription": "description",
       "hideReadMore": false,
       "projects": [
         {
-          "title": "title 1",
-          "image": "images/image2.png",
+          "title": "Blackjack (Java)",
+          "image": "assets/images/blackjack.png",
+          "buttonLabel": "View",
           "description": [
-            "description line 1",
-            "description line 2"
+            "Designed and implemented a mostly full-featured Blackjack game in Java.",
+            "Game includes an 8-deck shoe, card shuffling, hit/stay/double/split/surrender logic, betting, dealer play, win detection, and bankroll.",
+            "Playable only via desktop Java due to GUI requirements. (I still need to port to JavaScript.)"
           ],
-          "skills": ["x", "y"]
-        },
-        {
-          "title": "title 2",
-          "image": "images/image3.png",
-          "description": [
-            "description"
-          ],
-          "skills": ["a", "b", "c"]
+          "skills": ["Java", "JavaFX", "Game Logic", "Object-oriented design"],
+          "embed": "<iframe src='https://replit.com/@brianacollamore/New-Blackjack-Summer-2025-TJ-Collamore?lite=true' width='100%' height='500px' frameborder='0'></iframe>"
         }
       ]
     },
