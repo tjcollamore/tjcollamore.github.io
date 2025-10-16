@@ -30,15 +30,15 @@
         {
           "title": "Blackjack (Java)",
           "image": "assets/images/blackjack.png",
-          "buttonLabel": "View",
+          "buttonLabel": "View Clip",
+          "embed": "<video src='assets/images/BlackjackClip.mp4' controls autoplay muted playsinline style='max-width:100%; height:auto;'></video>",
           "description": [
             "Designed and implemented a mostly full-featured Blackjack game in Java.",
             "Game includes an 8-deck shoe, card shuffling, hit/stay/double/split/surrender logic, betting, dealer play, win detection, and bankroll.",
             "Playable only via desktop Java due to GUI requirements. (I still need to port to JavaScript.)",
             "I purposefully only used AI for UI elements, as my goal was to practice more advanced object-oriented programming."
           ],
-          "skills": ["Java", "JavaFX", "Game Logic", "Object-oriented design", "Recursion"],
-          "embed": "<iframe src='https://replit.com/@brianacollamore/New-Blackjack-Summer-2025-TJ-Collamore?lite=true' width='100%' height='500px' frameborder='0'></iframe>"
+          "skills": ["Java", "JavaFX", "Game Logic", "Object-oriented design", "Recursion"]
         }
       ]
     },
