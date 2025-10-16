@@ -31,7 +31,7 @@
           "title": "Blackjack (Java)",
           "image": "assets/images/blackjack.png",
           "buttonLabel": "View Clip",
-          "embed": "<div class='blackjack-video-wrapper'><video src='assets/images/BlackjackClip.mp4' controls autoplay muted playsinline style='max-width:100%; height:auto;'></video></div>",
+          "embed": "<div class='blackjack-video-wrapper'><video src='assets/images/BlackjackClip.mp4' controls autoplay muted playsinline></video></div>",
           "description": [
             "Designed and implemented a mostly full-featured Blackjack game in Java.",
             "Game includes an 8-deck shoe, card shuffling, hit/stay/double/split/surrender logic, betting, dealer play, win detection, and bankroll.",
