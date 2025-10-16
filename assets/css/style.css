@@ -311,11 +311,11 @@ nav li + li::before {
 
 .blackjack-video-wrapper {
   overflow: hidden;
-  height: 360px;   /* trim the black edge */
+  height: 447px;   /* trim the black bottom edge */
 }
 
 .blackjack-video-wrapper video {
-  transform: scale(0.65);
+  transform: scale(0.5);
   transform-origin: top center;
   display: block;
   margin: 0 auto;
