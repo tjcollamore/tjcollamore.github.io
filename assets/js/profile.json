@@ -79,6 +79,30 @@
           "skills": ["Scratch", "Game Logic", "UI Design", "Animations"]
         }
       ]
+    },
+    {
+      "season": "Fall",
+      "year": 2022,
+      "title": "Bio Lab",
+      "logo": "images/image4.png",
+      "shortDescription": "description 4",
+      "hideReadMore": false,
+      "projects": [
+        {
+          "title": "AP Biology Lab Notebook",
+          "image": "assets/images/bio-lab-1/16.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/bio-lab-1",
+            "pageCount": 35,
+            "extension": "jpg"
+          },
+          "description": [
+            "Scanned pages from my AP Bio lab notebook, where I wrote a program to help me study the effect of tar spot has on the chlorophyll concentration of leaves."
+          ],
+          "skills": ["AP Biology", "Lab Documentation", "C#"]
+        }
+      ]
     }
   ],
   "experiences": [
@@ -133,30 +157,6 @@
             "description"
           ],
           "skills": ["j", "k", "l"]
-        }
-      ]
-    },
-    {
-      "season": "Fall",
-      "year": 2022,
-      "title": "Bio Lab",
-      "logo": "images/image4.png",
-      "shortDescription": "description 4",
-      "hideReadMore": false,
-      "projects": [
-        {
-          "title": "AP Biology Lab Notebook",
-          "image": "assets/images/bio-lab-1/16.jpg",
-          "buttonLabel": "View Notebook",
-          "notebook": {
-            "folder": "assets/images/bio-lab-1",
-            "pageCount": 35,
-            "extension": "jpg"
-          },
-          "description": [
-            "Scanned pages from my AP Bio lab notebook, where I wrote a program to help me study the effect of tar spot has on the chlorophyll concentration of leaves."
-          ],
-          "skills": ["AP Biology", "Lab Documentation", "C#"]
         }
       ]
     }
