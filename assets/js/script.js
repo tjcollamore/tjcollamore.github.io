@@ -56,39 +56,19 @@ function openProjectModalFromArray(array, expIdx, projIdx) {
     let currentPage = 1;
     const { folder, pageCount, extension } = proj.notebook;
 
-    const updateNotebookPage = () => {
-      const imgPath = `${folder}/${currentPage}.${extension}`;
-      document.getElementById("notebook-image").src = imgPath;
-      document.getElementById("page-counter").textContent = `Page ${currentPage} of ${pageCount}`;
-    };
-    
     embedHtml = `
       <div class="notebook-viewer">
         <img id="notebook-image" src="${folder}/1.${extension}" alt="Notebook Page" />
         <div class="notebook-controls">
-          <button id="prev-page" ${currentPage === 1 ? "disabled" : ""}>⟵ Prev</button>
+          <button id="prev-page" disabled>⟵ Prev</button>
           <span id="page-counter">Page 1 of ${pageCount}</span>
           <button id="next-page">Next ⟶</button>
         </div>
       </div>
     `;
-
-    // Add event listeners
-    document.getElementById("prev-page").addEventListener("click", () => {
-      if (currentPage > 1) {
-        currentPage--;
-        updateNotebookPage();
-      }
-    });
-
-    document.getElementById("next-page").addEventListener("click", () => {
-      if (currentPage < pageCount) {
-        currentPage++;
-        updateNotebookPage();
-      }
-    });
   }
 
+  // Inject content FIRST (so elements exist)
   body.innerHTML = `
     <h2>${proj.title}</h2>
     ${embedHtml}
@@ -98,6 +78,37 @@ function openProjectModalFromArray(array, expIdx, projIdx) {
   `;
 
   document.getElementById("modal").style.display = "flex";
+
+  // THEN safely attach event listeners AFTER DOM is updated
+  if (proj.notebook) {
+    let currentPage = 1;
+    const { folder, pageCount, extension } = proj.notebook;
+    const img = document.getElementById("notebook-image");
+    const counter = document.getElementById("page-counter");
+    const prevBtn = document.getElementById("prev-page");
+    const nextBtn = document.getElementById("next-page");
+
+    const updateNotebookPage = () => {
+      img.src = `${folder}/${currentPage}.${extension}`;
+      counter.textContent = `Page ${currentPage} of ${pageCount}`;
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === pageCount;
+    };
+
+    prevBtn.addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        updateNotebookPage();
+      }
+    });
+
+    nextBtn.addEventListener("click", () => {
+      if (currentPage < pageCount) {
+        currentPage++;
+        updateNotebookPage();
+      }
+    });
+  }
 }
 
 
