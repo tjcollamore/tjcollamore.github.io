@@ -53,39 +53,40 @@ function openProjectModalFromArray(array, expIdx, projIdx) {
 
   // Case 2: lab notebook viewer
   if (proj.notebook) {
-    const folder = proj.notebook.folder;
-    const count = proj.notebook.count;
+    let currentPage = 1;
+    const { folder, pageCount, extension } = proj.notebook;
 
+    const updateNotebookPage = () => {
+      const imgPath = `${folder}/${currentPage}.${extension}`;
+      document.getElementById("notebook-image").src = imgPath;
+      document.getElementById("page-counter").textContent = `Page ${currentPage} of ${pageCount}`;
+    };
+    
     embedHtml = `
       <div class="notebook-viewer">
-        <button id="prevPage" class="notebook-nav">&lt;</button>
-        <img id="notebookPage" src="${folder}/1.jpg" alt="Notebook Page" />
-        <button id="nextPage" class="notebook-nav">&gt;</button>
+        <img id="notebook-image" src="${folder}/1.${extension}" alt="Notebook Page" />
+        <div class="notebook-controls">
+          <button id="prev-page" ${currentPage === 1 ? "disabled" : ""}>⟵ Prev</button>
+          <span id="page-counter">Page 1 of ${pageCount}</span>
+          <button id="next-page">Next ⟶</button>
+        </div>
       </div>
-      <p id="pageCounter" class="notebook-counter">Page 1 of ${count}</p>
-      <hr>
     `;
 
-    // Delay JS binding until modal is visible
-    setTimeout(() => {
-      let currentPage = 1;
-      const img = document.getElementById("notebookPage");
-      const counter = document.getElementById("pageCounter");
-      document.getElementById("prevPage").onclick = () => {
-        if (currentPage > 1) {
-          currentPage--;
-          img.src = `${folder}/${currentPage}.jpg`;
-          counter.textContent = `Page ${currentPage} of ${count}`;
-        }
-      };
-      document.getElementById("nextPage").onclick = () => {
-        if (currentPage < count) {
-          currentPage++;
-          img.src = `${folder}/${currentPage}.jpg`;
-          counter.textContent = `Page ${currentPage} of ${count}`;
-        }
-      };
-    }, 100);
+    // Add event listeners
+    document.getElementById("prev-page").addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage--;
+        updateNotebookPage();
+      }
+    });
+
+    document.getElementById("next-page").addEventListener("click", () => {
+      if (currentPage < pageCount) {
+        currentPage++;
+        updateNotebookPage();
+      }
+    });
   }
 
   body.innerHTML = `
