@@ -119,20 +119,26 @@
       ]
     },
     {
-      "season": "Summer",
-      "year": 2023,
-      "title": "title 3",
+      "season": "Fall",
+      "year": 2022,
+      "title": "Bio Lab",
       "logo": "images/image4.png",
       "shortDescription": "description 4",
       "hideReadMore": false,
       "projects": [
         {
-          "title": "project title 1",
-          "image": "images/image5.png",
+          "title": "AP Biology Lab Notebook",
+          "image": "assets/images/bio-lab-1/16.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/bio-lab-1",
+            "pageCount": 35,
+            "extension": "jpg"
+          },
           "description": [
-            "description"
+            "Scanned pages from my AP Bio lab notebook, where I wrote a program to help me study the effect of tar spot has on the chlorophyll concentration of leaves."
           ],
-          "skills": ["j", "k", "l"]
+          "skills": ["AP Biology", "Lab Documentation", "C#"]
         }
       ]
     }
