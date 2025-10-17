@@ -43,18 +43,62 @@ function openModalFromArray(array, idx) {
 function openProjectModalFromArray(array, expIdx, projIdx) {
   const proj = array[expIdx].projects[projIdx];
   const body = document.getElementById("modal-body");
-  const embed = proj.embed
-    ? `<div class="modal-embed">${proj.embed}</div><hr>`
-    : "";
+
+  let embedHtml = "";
+
+  // Case 1: embedded video/game
+  if (proj.embed) {
+    embedHtml = `<div class="modal-embed">${proj.embed}</div><hr>`;
+  }
+
+  // Case 2: lab notebook viewer
+  if (proj.notebook) {
+    const folder = proj.notebook.folder;
+    const count = proj.notebook.count;
+
+    embedHtml = `
+      <div class="notebook-viewer">
+        <button id="prevPage" class="notebook-nav">&lt;</button>
+        <img id="notebookPage" src="${folder}/1.jpg" alt="Notebook Page" />
+        <button id="nextPage" class="notebook-nav">&gt;</button>
+      </div>
+      <p id="pageCounter" class="notebook-counter">Page 1 of ${count}</p>
+      <hr>
+    `;
+
+    // Delay JS binding until modal is visible
+    setTimeout(() => {
+      let currentPage = 1;
+      const img = document.getElementById("notebookPage");
+      const counter = document.getElementById("pageCounter");
+      document.getElementById("prevPage").onclick = () => {
+        if (currentPage > 1) {
+          currentPage--;
+          img.src = `${folder}/${currentPage}.jpg`;
+          counter.textContent = `Page ${currentPage} of ${count}`;
+        }
+      };
+      document.getElementById("nextPage").onclick = () => {
+        if (currentPage < count) {
+          currentPage++;
+          img.src = `${folder}/${currentPage}.jpg`;
+          counter.textContent = `Page ${currentPage} of ${count}`;
+        }
+      };
+    }, 100);
+  }
+
   body.innerHTML = `
     <h2>${proj.title}</h2>
-    ${embed}
+    ${embedHtml}
     ${proj.description.map(p => `<p>${p}</p>`).join("")}
     <h4>Skills:</h4>
     <p class="skills-line">${proj.skills.join(", ")}</p>
   `;
+
   document.getElementById("modal").style.display = "flex";
 }
+
 
 function closeModal() {
   document.getElementById("modal").style.display = "none";
