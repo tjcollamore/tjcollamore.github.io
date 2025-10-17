@@ -40,23 +40,64 @@ function openModalFromArray(array, idx) {
   document.getElementById("modal").style.display = "flex";
 }
 
-function openProjectModalFromArray(array, expIdx, projIdx) {
-  const proj = array[expIdx].projects[projIdx];
-  const body = document.getElementById("modal-body");
+function openProjectModal(expIdx, projIdx) {
+  fetch("assets/js/profile.json")
+    .then(res => res.json())
+    .then(data => {
+      const proj = data.experiences[expIdx].projects[projIdx];
+      const body = document.getElementById("modal-body");
 
-  const embed = proj.embed
-    ? `<div class="modal-embed">${proj.embed}</div><hr>`
-    : "";
+      if (proj.notebook) {
+        let currentPage = 1;
+        const { folder, pageCount, extension } = proj.notebook;
 
-  body.innerHTML = `
-    <h2>${proj.title}</h2>
-    ${embed}
-    ${proj.description.map(p => `<p>${p}</p>`).join("")}
-    <h4>Skills:</h4>
-    <p class="skills-line">${proj.skills.join(", ")}</p>
-  `;
-  document.getElementById("modal").style.display = "flex";
+        const updateNotebookPage = () => {
+          const imgPath = `${folder}/${currentPage}.${extension}`;
+          document.getElementById("notebook-image").src = imgPath;
+          document.getElementById("page-counter").textContent = `Page ${currentPage} of ${pageCount}`;
+        };
+
+        body.innerHTML = `
+          <h2>${proj.title}</h2>
+          <div class="notebook-viewer">
+            <img id="notebook-image" src="${folder}/1.${extension}" alt="Notebook Page" />
+            <div class="notebook-controls">
+              <button id="prev-page" ${currentPage === 1 ? "disabled" : ""}>⟵ Prev</button>
+              <span id="page-counter">Page 1 of ${pageCount}</span>
+              <button id="next-page">Next ⟶</button>
+            </div>
+          </div>
+          <p class="skills-line">${proj.skills.join(", ")}</p>
+        `;
+
+        // Add event listeners
+        document.getElementById("prev-page").addEventListener("click", () => {
+          if (currentPage > 1) {
+            currentPage--;
+            updateNotebookPage();
+          }
+        });
+
+        document.getElementById("next-page").addEventListener("click", () => {
+          if (currentPage < pageCount) {
+            currentPage++;
+            updateNotebookPage();
+          }
+        });
+      } else {
+        // Default embed/video/game project behavior
+        body.innerHTML = `
+          <h2>${proj.title}</h2>
+          ${proj.embed ? `<div class="modal-embed">${proj.embed}</div>` : ""}
+          ${proj.description.map(p => `<p>${p}</p>`).join("")}
+          <p class="skills-line">${proj.skills.join(", ")}</p>
+        `;
+      }
+
+      document.getElementById("modal").style.display = "flex";
+    });
 }
+
 
 
 function closeModal() {
