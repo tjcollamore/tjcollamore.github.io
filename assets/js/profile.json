@@ -37,7 +37,7 @@
           "buttonLabel": "View Clip",
           "embed": "<div class='tufts-video-wrapper'><video src='assets/images/tufts.mp4' controls autoplay muted playsinline></video></div>",
           "description": [
-            "As part of a summer program at Tufts, leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an rtificial neural network"
+            "As part of a summer program at Tufts, leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an artificial neural network"
           ],
           "skills": ["Python", "AI", "Reinforcement Learning", "Neural Networks"]
         }
