@@ -56,7 +56,7 @@
           "buttonLabel": "Play",
           "embed": "<iframe src='https://scratch.mit.edu/projects/820510104/embed' allowtransparency='true' width='485' height='402' frameborder='0' scrolling='no' allowfullscreen></iframe>",
           "description": [
-            "This is a customized Pac-Man game comprised of 3 unique levels. Use the up, down, left, and right arrow keys to control Pac-Man. Collect all of the Food scattered throughout the map in order to advance to the next level within 90 seconds. There are two ghosts (Pinky and Clyde) that are programmed to randomly move through hallways. A second player can use the "A" and "D" controls to tell Clyde where to go relative to Clyde's position, and override the randomness of the movement. Each time you win a level, the next level will increase the speed for Pac-Man and the ghosts. Complete the 3 levels to win the game."
+            "This is a customized Pac-Man game comprised of 3 unique levels. Use the up, down, left, and right arrow keys to control Pac-Man. Collect all of the Food scattered throughout the map in order to advance to the next level within 90 seconds. There are two ghosts (Pinky and Clyde) that are programmed to randomly move through hallways. A second player can use the 'A' and 'D' controls to tell Clyde where to go relative to Clyde's position, and override the randomness of the movement. Each time you win a level, the next level will increase the speed for Pac-Man and the ghosts. Complete the 3 levels to win the game."
           ],
           "skills": ["Scratch", "Game Logic", "UI Design", "Animations"]
         },
