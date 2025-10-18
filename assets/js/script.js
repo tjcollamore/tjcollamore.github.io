@@ -206,8 +206,8 @@ fetch('assets/js/profile.json')
           <button onclick="window.location.href='assets/text/TJ Collamore Resume.pdf'">
             <i class="fa-regular fa-file-lines"></i> Resume
           </button>
-          <button onclick="window.open('https://www.linkedin.com/in/tjcollamore/')">
-            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          <button onclick="window.open('https://www.instagram.com/tjcollamore/')">
+            <i class="fa-brands fa-instagram"></i> Instagram
           </button>
         </div>
       </div>
