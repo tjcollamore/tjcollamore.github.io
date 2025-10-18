@@ -98,6 +98,16 @@
             "Studied an application of Laminar Flow: the effect of distance from shore on surface current."
           ],
           "skills": ["AP Biology", "Lab Documentation"]
+        },
+        {
+          "title": "Origami",
+          "image": "assets/images/origami-thumbnail",
+          "buttonLabel": "View Clip",
+          "embed": "<div class='origami-video-wrapper'><video src='assets/images/origami.mov' controls autoplay muted playsinline></video></div>",
+          "description": [
+            "For a Geometry extra credit project, created an origami comprising 640 individual units involving over 10,000 folds."
+          ],
+          "skills": ["Origami"]
         }
       ]
     },
