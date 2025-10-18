@@ -206,30 +206,7 @@ fetch('assets/js/profile.json')
   .then(r => r.json())
   .then(json => {
     data = json;
-
-    // HOME
-    const home = document.getElementById('home');
-    home.innerHTML = `
-      <div class="home-content">
-        <p class="home-intro">${data.home}</p>
-        <div class="slideshow-container">
-          <img class="slide" src="images/slide1.jpg" alt="">
-          <img class="slide" src="images/slide2.jpg" alt="">
-          <img class="slide" src="images/slide3.jpg" alt="">
-          <img class="slide" src="images/slide4.jpg" alt="">
-        </div>
-        <div class="slideshow-buttons">
-          <button onclick="window.location.href='assets/text/TJ Collamore Resume.pdf'">
-            <i class="fa-regular fa-file-lines"></i> Resume
-          </button>
-          <button onclick="window.open('https://www.instagram.com/tj.collamore/')">
-            <i class="fa-brands fa-instagram"></i> Instagram
-          </button>
-        </div>
-      </div>
-    `;
-    startSlideshow();
-
+    
     // Timeline tabs
     renderTimeline("experiences", data.experiences);
     renderTimeline("projects", data.projects);
@@ -258,17 +235,38 @@ fetch('assets/js/profile.json')
       .then(text => {
         const aboutEl = document.getElementById('about');
         aboutEl.innerHTML = `
-          <div class="about-content">
-            <div class="photo-wrapper">
-              <img src="images/profile.jpg" class="about-photo" alt="My Photo">
+          <div class="home-content">
+            <p class="home-intro">${data.home}</p>
+            <div class="slideshow-container">
+              <img class="slide" src="images/slide1.jpg" alt="">
+              <img class="slide" src="images/slide2.jpg" alt="">
+              <img class="slide" src="images/slide3.jpg" alt="">
+              <img class="slide" src="images/slide4.jpg" alt="">
             </div>
-            <div class="about-right">
-              <p class="about-bio">${text
-                .replace(/\n/g, '<br>')
-                .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')}                                     
-              </p>
+            <div class="slideshow-buttons">
+              <button onclick="window.location.href='assets/text/TJ Collamore Resume.pdf'">
+                <i class="fa-regular fa-file-lines"></i> Resume
+              </button>
+              <button onclick="window.open('https://www.instagram.com/tj.collamore/')">
+                <i class="fa-brands fa-instagram"></i> Instagram
+              </button>
+            </div>
+    
+            <hr style="margin:2rem 0;">
+    
+            <div class="about-content">
+              <div class="photo-wrapper">
+                <img src="images/profile.jpg" class="about-photo" alt="My Photo">
+              </div>
+              <div class="about-right">
+                <p class="about-bio">${text
+                  .replace(/\n/g, '<br>')
+                  .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')}
+                </p>
+              </div>
             </div>
           </div>
         `;
+        startSlideshow();
       });
   });
