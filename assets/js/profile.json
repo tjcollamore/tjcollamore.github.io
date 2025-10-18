@@ -18,7 +18,7 @@
       "hideReadMore": false,
       "projects": [
         {
-          "title": "Blackjack (Java)",
+          "title": "Blackjack<br>(Java)",
           "image": "assets/images/blackjack.png",
           "buttonLabel": "View Clip",
           "embed": "<div class='blackjack-video-wrapper'><video src='assets/images/BlackjackClip.mp4' controls autoplay muted playsinline></video></div>",
