@@ -203,7 +203,7 @@ fetch('assets/js/profile.json')
           <img class="slide" src="images/slide4.jpg" alt="">
         </div>
         <div class="slideshow-buttons">
-          <button onclick="window.location.href='docs/resume.pdf'">
+          <button onclick="window.location.href='assets/text/TJ Collamore Resume.pdf'">
             <i class="fa-regular fa-file-lines"></i> Resume
           </button>
           <button onclick="window.open('https://www.linkedin.com/in/tjcollamore/')">
