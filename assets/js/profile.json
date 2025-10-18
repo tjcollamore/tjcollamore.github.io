@@ -35,7 +35,7 @@
           "title": "Neural Network (Python)",
           "image": "assets/images/tufts.png",
           "buttonLabel": "View Clip",
-          "embed": "<div class='tufts-video-wrapper'><video src='assets/images/tufts.mp4' controls autoplay muted playsinline></video></div>",
+          "embed": "<div class='tufts-video-wrapper'><video src='assets/images/tufts.mov' controls autoplay muted playsinline></video></div>",
           "description": [
             "As part of a summer program at Tufts, leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an artificial neural network"
           ],
