@@ -237,11 +237,12 @@ fetch('assets/js/profile.json')
     // ESSAYS
     const essaysSection = document.getElementById('essays-list');
     if (data.essays && data.essays.length) {
-      essaysSection.innerHTML = data.essays.map((e, idx) => `
+      essaysSection.innerHTML = data.essays.map(e => `
         <div class="essay-card">
           <img src="${e.thumbnail || 'assets/images/pdf-icon.png'}" alt="${e.title}" class="essay-thumb">
           <div class="essay-content">
             <h3>${e.title}</h3>
+            ${e.tagline ? `<p class="essay-tagline">${e.tagline}</p>` : ""}
             <p>${e.description || ''}</p>
             <button class="essay-btn" onclick="openPdfModal('${e.file}', '${e.title}')">
               <i class="fa-regular fa-file-pdf"></i> View PDF
