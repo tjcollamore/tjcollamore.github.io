@@ -218,6 +218,20 @@ fetch('assets/js/profile.json')
     renderTimeline("experiences", data.experiences);
     renderTimeline("projects", data.projects);
 
+    // ESSAYS
+    const essaysSection = document.getElementById('essays-list');
+    if (data.essays && data.essays.length) {
+      essaysSection.innerHTML = data.essays.map(e => `
+        <div class="essay-card">
+          <h3>${e.title}</h3>
+          <p>${e.description}</p>
+          <a href="${e.file}" target="_blank" class="essay-btn">
+            View PDF
+          </a>
+        </div>
+      `).join('');
+    }
+    
     // ABOUT
     fetch(data.about)
       .then(res => res.text())
