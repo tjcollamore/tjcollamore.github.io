@@ -258,10 +258,6 @@ fetch('assets/js/profile.json')
               <i class="fa-brands fa-instagram"></i> Instagram
             </button>
           </div>
-          <hr>
-          <p class="about-bio">
-            Cross-country captain and software creator — passionate about engineering, leadership, and learning with purpose.
-          </p>
         </div>
       </div>
     `;
