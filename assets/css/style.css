@@ -559,11 +559,18 @@ nav li + li::before {
   border-radius: var(--radius);
   padding: 1.5rem;
   width: 90%;
-  max-width: 900px;       /* ✅ consistent width for all PDFs */
+  max-width: 900px;      /* consistent width */
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column; /* ensures full-width children */
+}
+
+#pdf-viewer-body {
+  flex: 1;
+  width: 100%;
 }
 
 #pdf-viewer-body h2 {
@@ -571,11 +578,13 @@ nav li + li::before {
   margin-bottom: 1rem;
   font-size: 1.3rem;
   color: var(--primary);
+  word-wrap: break-word;
 }
 
 #pdf-viewer-body iframe {
-  width: 100%;
-  height: 80vh;
+  display: block;
+  width: 100% !important;     /* ✅ force full width */
+  height: 80vh !important;    /* ✅ consistent height */
   border: none;
   border-radius: var(--radius);
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
