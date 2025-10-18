@@ -236,7 +236,7 @@ fetch('assets/js/profile.json')
       <div class="intro-hero">
         <img src="assets/images/profile.jpg" alt="TJ Collamore" class="intro-photo">
         <div class="intro-text">
-          <h2>Hi, I’m TJ Collamore 👋</h2>
+          <h2>Hi,</h2>
           <p>${data.home}</p>
           <div class="intro-buttons">
             <button onclick="window.location.href='assets/text/TJ Collamore Resume.pdf'">
