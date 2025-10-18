@@ -64,6 +64,30 @@
       ]
     },
     {
+      "season": "Winter",
+      "year": 2023,
+      "title": "Bio Lab",
+      "logo": "assets/images/bio-lab-2/34.jpg",
+      "shortDescription": "Used a drone and bluetooth thermometer to study the effect of elevation on air temperature.",
+      "hideReadMore": false,
+      "projects": [
+        {
+          "title": "AP Biology Lab Notebook",
+          "image": "assets/images/bio-lab-2/34.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/bio-lab-2",
+            "pageCount": 36,
+            "extension": "jpg"
+          },
+          "description": [
+            "Used a drone and bluetooth thermometer to study the effect of elevation on air temperature."
+          ],
+          "skills": ["AP Biology", "Lab Documentation"]
+        }
+      ]
+    }
+    {
       "season": "Fall",
       "year": 2022,
       "title": "Bio Lab",
