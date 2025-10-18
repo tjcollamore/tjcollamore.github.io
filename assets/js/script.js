@@ -111,10 +111,22 @@ function openProjectModalFromArray(array, expIdx, projIdx) {
   }
 }
 
-
 function closeModal() {
-  document.getElementById("modal").style.display = "none";
+  const modal = document.getElementById("modal");
+  modal.style.display = "none";
+
+  // Stop any <video> or <audio> elements playing inside
+  modal.querySelectorAll("video, audio").forEach(el => {
+    el.pause();
+    el.currentTime = 0; // optional: rewind to start
+  });
+
+  // Reset any <iframe> (e.g., YouTube or Scratch embeds) by reloading them
+  modal.querySelectorAll("iframe").forEach(iframe => {
+    iframe.src = iframe.src;
+  });
 }
+
 
 function openPdfModal(file, title) {
   const modal = document.getElementById("pdf-modal");
