@@ -138,6 +138,10 @@ nav li + li::before {
   background: #357ABD;
 }
 
+.slideshow-buttons button i.fa-instagram {
+  color: #E4405F;  /* Instagram's signature pinkish-red tone */
+}
+
 /* experiences timeline */
 .timeline {
   margin-top: 2rem;
