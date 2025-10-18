@@ -216,7 +216,6 @@ fetch('assets/js/profile.json')
     if (data.essays && data.essays.length) {
       essaysSection.innerHTML = data.essays.map(e => `
         <div class="essay-card">
-          <img src="${e.thumbnail || 'assets/images/pdf-icon.png'}" alt="${e.title}" class="essay-thumb">
           <div class="essay-content">
             <h3>${e.title}</h3>
             ${e.tagline ? `<p class="essay-tagline">${e.tagline}</p>` : ""}
