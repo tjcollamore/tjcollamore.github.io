@@ -231,34 +231,27 @@ fetch('assets/js/profile.json')
     }
 
     // ABOUT
-    fetch(data.about)
-      .then(res => res.text())
-      .then(text => {
-        const aboutEl = document.getElementById('about');
-        aboutEl.innerHTML = `
-          <div class="intro-hero">
-            <div class="intro-text">
-              <h2>Hi, I’m TJ Collamore 👋</h2>
-              <p>${data.home}</p>
-              <div class="intro-buttons">
-                <button onclick="window.location.href='assets/text/TJ Collamore Resume.pdf'">
-                  <i class="fa-regular fa-file-lines"></i> Resume
-                </button>
-                <button onclick="window.open('https://www.instagram.com/tj.collamore/')">
-                  <i class="fa-brands fa-instagram"></i> Instagram
-                </button>
-              </div>
-            </div>
-            <img src="assets/images/profile.jpg" alt="TJ Collamore" class="intro-photo">
+    const aboutEl = document.getElementById('about');
+    aboutEl.innerHTML = `
+      <div class="intro-hero reverse-layout">
+        <img src="images/profile.jpg" alt="TJ Collamore" class="intro-photo">
+        <div class="intro-text">
+          <h2>Hi, I’m TJ Collamore 👋</h2>
+          <p>${data.home}</p>
+          <div class="intro-buttons">
+            <button onclick="window.location.href='assets/text/TJ Collamore Resume.pdf'">
+              <i class="fa-regular fa-file-lines"></i> Resume
+            </button>
+            <button onclick="window.open('https://www.instagram.com/tj.collamore/')">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </button>
           </div>
-    
           <hr>
-    
-          <div class="about-bio">
-            ${text
-              .replace(/\n/g, '<br>')
-              .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>')}
-          </div>
-        `;
-      });
+          <p class="about-bio">
+            Cross-country captain and software creator — passionate about engineering, leadership, and learning with purpose.
+          </p>
+        </div>
+      </div>
+    `;
+
   });
