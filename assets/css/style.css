@@ -551,22 +551,30 @@ nav li + li::before {
   background-color: #eee;      /* ✅ fallback to verify visibility */
 }
 
+.intro-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;     /* ✅ adds breathing room below the paragraph */
+  justify-content: flex-start;  /* ✅ aligns nicely under text */
+  flex-wrap: wrap;         /* ✅ prevents squishing on smaller screens */
+}
 
 .intro-buttons button {
   background: var(--primary);
   color: #fff;
   border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: var(--radius);
-  margin-right: 1rem;
+  padding: 0.7rem 1.5rem;  /* ✅ slightly larger buttons for balance */
+  border-radius: 12px;     /* ✅ softer, more modern look */
   cursor: pointer;
   font-weight: 600;
-  transition: background var(--transition);
+  transition: background var(--transition), transform var(--transition);
 }
 
 .intro-buttons button:hover {
   background: #357abd;
+  transform: translateY(-2px);  /* ✅ subtle lift on hover */
 }
+
 
 /* Instagram accent color */
 .intro-buttons button i.fa-instagram {
