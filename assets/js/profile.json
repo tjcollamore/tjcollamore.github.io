@@ -65,7 +65,7 @@
         },
         {
           "title": "Chem Lab 6<br>Gravimetric Analysis",
-          "image": "assets/images/chem-lab-6/4.jpg",
+          "image": "assets/images/chem-lab-6/3.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
             "folder": "assets/images/chem-lab-6",
@@ -125,7 +125,7 @@
             "extension": "jpg"
           },
           "description": [
-            "Description here..."
+            ""
           ],
           "skills": ["Chemistry"]
         },
@@ -139,12 +139,12 @@
             "extension": "jpg"
           },
           "description": [
-            "Description here..."
+            ""
           ],
           "skills": ["Chemistry"]
         },
         {
-          "title": "Chem Lab 3",
+          "title": "Chem Lab 3<br>Coordination Compound",
           "image": "assets/images/chem-lab-3/9.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
@@ -153,7 +153,7 @@
             "extension": "jpg"
           },
           "description": [
-            "Description here..."
+            "Gain experience in the process of synthesizing and analyzing a coordination compound."
           ],
           "skills": ["Chemistry"]
         }
