@@ -121,8 +121,10 @@ function openPdfModal(file, title) {
   const body = document.getElementById("pdf-viewer-body");
 
   body.innerHTML = `
-    <h2>${title}</h2>
-    <iframe src="${file}" width="100%" height="600px" style="border:none;"></iframe>
+    <div class="pdf-inner">
+      <h2>${title}</h2>
+      <iframe src="${file}" title="${title} PDF Viewer"></iframe>
+    </div>
   `;
 
   modal.style.display = "flex";
