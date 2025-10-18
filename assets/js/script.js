@@ -234,7 +234,7 @@ fetch('assets/js/profile.json')
     const aboutEl = document.getElementById('about');
     aboutEl.innerHTML = `
       <div class="intro-hero">
-        <img src="images/profile.jpg" alt="TJ Collamore" class="intro-photo">
+        <img src="assets/images/profile.jpg" alt="TJ Collamore" class="intro-photo">
         <div class="intro-text">
           <h2>Hi, I’m TJ Collamore 👋</h2>
           <p>${data.home}</p>
