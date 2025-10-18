@@ -77,6 +77,20 @@
             "Description here..."
           ],
           "skills": ["Chemistry"]
+        },
+        {
+          "title": "Chem Lab 3",
+          "image": "assets/images/chem-lab-3/9.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/chem-lab-3",
+            "pageCount": 25,
+            "extension": "jpg"
+          },
+          "description": [
+            "Description here..."
+          ],
+          "skills": ["Chemistry"]
         }
       ]
     },
