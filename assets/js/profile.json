@@ -117,7 +117,7 @@
           "skills": ["AP Biology", "Lab Documentation"]
         },
         {
-          "title": "Origami",
+          "title": "Origami Extra Credit",
           "image": "assets/images/origami-thumbnail.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
