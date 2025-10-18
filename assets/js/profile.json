@@ -101,7 +101,7 @@
         },
         {
           "title": "Origami",
-          "image": "assets/images/origami-thumbnail",
+          "image": "assets/images/origami-thumbnail.jpg",
           "buttonLabel": "View Clip",
           "embed": "<div class='origami-video-wrapper'><video src='assets/images/origami.mov' controls autoplay muted playsinline></video></div>",
           "description": [
