@@ -116,6 +116,22 @@ function closeModal() {
   document.getElementById("modal").style.display = "none";
 }
 
+function openPdfModal(file, title) {
+  const modal = document.getElementById("pdf-modal");
+  const body = document.getElementById("pdf-viewer-body");
+
+  body.innerHTML = `
+    <h2>${title}</h2>
+    <iframe src="${file}" width="100%" height="600px" style="border:none;"></iframe>
+  `;
+
+  modal.style.display = "flex";
+}
+
+function closePdfModal() {
+  document.getElementById("pdf-modal").style.display = "none";
+}
+
 function renderTimeline(containerId, dataArray) {
   const section = document.getElementById(containerId);
   const seasonOrder = { Spring: 1, Summer: 2, Fall: 3, Winter: 4, Present: 5 };
@@ -221,21 +237,20 @@ fetch('assets/js/profile.json')
     // ESSAYS
     const essaysSection = document.getElementById('essays-list');
     if (data.essays && data.essays.length) {
-      essaysSection.innerHTML = data.essays.map(e => `
+      essaysSection.innerHTML = data.essays.map((e, idx) => `
         <div class="essay-card">
           <img src="${e.thumbnail || 'assets/images/pdf-icon.png'}" alt="${e.title}" class="essay-thumb">
           <div class="essay-content">
             <h3>${e.title}</h3>
             <p>${e.description || ''}</p>
-            <a href="${e.file}" target="_blank" class="essay-btn">
+            <button class="essay-btn" onclick="openPdfModal('${e.file}', '${e.title}')">
               <i class="fa-regular fa-file-pdf"></i> View PDF
-            </a>
+            </button>
           </div>
         </div>
       `).join('');
     }
 
-    
     // ABOUT
     fetch(data.about)
       .then(res => res.text())
