@@ -5,17 +5,9 @@
     {
       "season": "Fall",
       "year": 2025,
-      "title": "title 1",
-      "logo": "images/image1.png",
-      "shortDescription": "short description",
-      "hideReadMore": true
-    },
-    {
-      "season": "Fall",
-      "year": 2025,
       "title": "My website",
       "logo": "assets/images/blackjack.png",
-      "shortDescription": "short description",
+      "shortDescription": "Managed to make this while taking 6 APs, being a dedicated XC-captain, and applying to colleges!",
       "hideReadMore": true
     },
     {
@@ -39,24 +31,6 @@
             "I purposefully only used AI for UI elements, as my goal was to practice more advanced object-oriented programming."
           ],
           "skills": ["Java", "JavaFX", "Game Logic", "Object-oriented design", "Recursion"]
-        }
-      ]
-    },
-    {
-      "season": "Summer",
-      "year": 2023,
-      "title": "title 3",
-      "logo": "images/image4.png",
-      "shortDescription": "description 4",
-      "hideReadMore": false,
-      "projects": [
-        {
-          "title": "project title 1",
-          "image": "images/image5.png",
-          "description": [
-            "description"
-          ],
-          "skills": ["j", "k", "l"]
         }
       ]
     },
