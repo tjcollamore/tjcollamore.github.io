@@ -111,8 +111,12 @@
         {
           "title": "Origami",
           "image": "assets/images/origami-thumbnail.jpg",
-          "buttonLabel": "View Clip",
-          "embed": "<div class='origami-video-wrapper'><video src='assets/images/origami.mov' controls autoplay muted playsinline></video></div>",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/origami",
+            "pageCount": 5,
+            "extension": "jpg"
+          },
           "description": [
             "For a Geometry extra credit project, created an origami comprising 640 individual units involving over 10,000 folds."
           ],
