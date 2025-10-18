@@ -574,6 +574,18 @@ nav li + li::before {
   white-space: pre-wrap;
 }
 
+/* Reverse layout when profile photo is on the left */
+.reverse-layout {
+  flex-direction: row-reverse; /* flips image and text */
+}
+
+.reverse-layout .intro-photo {
+  order: -1;
+  margin-right: 2rem;
+  margin-left: 0;
+}
+
+
 /* ===== PDF Modal ===== */
 #pdf-modal {
   display: none;
