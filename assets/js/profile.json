@@ -172,17 +172,20 @@
     {
       "title": "Left Behind",
       "description": "A research paper analyzing the moral and strategic implications of the U.S. military's 'No Man Left Behind' policy, personalized by my grand-uncle <a href=\\\"https://dpaa-mil.sites.crmforce.mil/dpaaProfile?id=a0Jt000000sFDegEAG\\\">Allan P Collamore</a>.",
-      "file": "assets/text/TJCollamore-LeftBehind.pdf"
+      "file": "assets/text/TJCollamore-LeftBehind.pdf",
+      "thumbnail": "assets/images/leftbehind.png"
     },
     {
       "title": "A Microcosm of America's Grandeur and Shamefulness",
       "description": "",
-      "file": "assets/text/TJCollamore-AmericaMicrocosm.pdf"
+      "file": "assets/text/TJCollamore-AmericaMicrocosm.pdf",
+      "thumbnail": "assets/images/microcosm.png"
     },
     {
       "title": "Imperfect Green Revolution Saves India",
       "description": "",
-      "file": "assets/text/TJCollamore-GreenRevolution.pdf"
+      "file": "assets/text/TJCollamore-GreenRevolution.pdf",
+      "thumbnail": "assets/images/greenrevolution.png"
     }
   ]
 }
