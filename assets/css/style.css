@@ -539,14 +539,18 @@ nav li + li::before {
   color: var(--fg);
 }
 
+/* Force the profile photo to display and stay visible */
 .intro-photo {
   width: 250px;
   height: 250px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  flex-shrink: 0;
+  display: block;              /* ✅ ensure it’s rendered */
+  flex-shrink: 0;              /* ✅ prevent it from collapsing */
+  background-color: #eee;      /* ✅ fallback to verify visibility */
 }
+
 
 .intro-buttons button {
   background: var(--primary);
