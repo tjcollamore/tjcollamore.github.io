@@ -52,7 +52,7 @@
       "projects": [
         {
           "title": "Chem Lab 1<br>Basics",
-          "image": "assets/images/chem-lab-1/1.png",
+          "image": "assets/images/chem-lab-1/1.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
             "folder": "assets/images/chem-lab-1",
