@@ -15,7 +15,7 @@
       "year": 2025,
       "title": "Blackjack (Personal) & AI Neural Network (Tufts University)",
       "logo": "assets/images/blackjack.png",
-      "shortDescription": "Designed and implemented a mostly full-featured Blackjack game in Java, and leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an artificial neural network",
+      "shortDescription": "Designed and implemented a mostly full-featured Blackjack game in Java, and leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an artificial neural network.",
       "hideReadMore": false,
       "projects": [
         {
@@ -37,7 +37,7 @@
           "buttonLabel": "View Clip",
           "embed": "<div class='tufts-video-wrapper'><video src='assets/images/tufts.mov' controls autoplay muted playsinline></video></div>",
           "description": [
-            "As part of a summer program at Tufts, leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an artificial neural network"
+            "As part of a summer program at Tufts, leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an artificial neural network."
           ],
           "skills": ["Python", "AI", "Reinforcement Learning", "Neural Networks"]
         }
