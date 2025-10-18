@@ -223,14 +223,18 @@ fetch('assets/js/profile.json')
     if (data.essays && data.essays.length) {
       essaysSection.innerHTML = data.essays.map(e => `
         <div class="essay-card">
-          <h3>${e.title}</h3>
-          <p>${e.description}</p>
-          <a href="${e.file}" target="_blank" class="essay-btn">
-            <i class="fa-regular fa-file-pdf"></i> View PDF
-          </a>
+          <img src="${e.thumbnail || 'assets/images/pdf-icon.png'}" alt="${e.title}" class="essay-thumb">
+          <div class="essay-content">
+            <h3>${e.title}</h3>
+            <p>${e.description || ''}</p>
+            <a href="${e.file}" target="_blank" class="essay-btn">
+              <i class="fa-regular fa-file-pdf"></i> View PDF
+            </a>
+          </div>
         </div>
       `).join('');
     }
+
     
     // ABOUT
     fetch(data.about)
