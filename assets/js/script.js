@@ -249,7 +249,7 @@ fetch('assets/js/profile.json')
                 </button>
               </div>
             </div>
-            <img src="images/profile.jpg" alt="TJ Collamore" class="intro-photo">
+            <img src="assets/images/profile.jpg" alt="TJ Collamore" class="intro-photo">
           </div>
     
           <hr>
