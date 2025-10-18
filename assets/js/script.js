@@ -226,7 +226,7 @@ fetch('assets/js/profile.json')
           <h3>${e.title}</h3>
           <p>${e.description}</p>
           <a href="${e.file}" target="_blank" class="essay-btn">
-            View PDF
+            <i class="fa-regular fa-file-pdf"></i> View PDF
           </a>
         </div>
       `).join('');
