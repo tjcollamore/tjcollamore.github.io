@@ -414,6 +414,14 @@ nav li + li::before {
   font-size: 1.1rem;
 }
 
+.essay-tagline {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: -0.25rem;
+  margin-bottom: 0.5rem;
+}
+
 .essay-card p {
   color: var(--muted);
   font-size: 0.95rem;
