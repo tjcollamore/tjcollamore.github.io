@@ -51,7 +51,7 @@
       "hideReadMore": false,
       "projects": [
         {
-          "title": "Chem Lab 1",
+          "title": "Chem Lab 1<br>Basics",
           "image": "assets/images/chem-lab-1/1.png",
           "buttonLabel": "View Notebook",
           "notebook": {
@@ -65,8 +65,8 @@
           "skills": ["Chemistry"]
         },
         {
-          "title": "Chem Lab 2",
-          "image": "assets/images/chem-lab-2/1.png",
+          "title": "Chem Lab 2<br>Copper Cycle",
+          "image": "assets/images/chem-lab-2/9.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
             "folder": "assets/images/chem-lab-2",
