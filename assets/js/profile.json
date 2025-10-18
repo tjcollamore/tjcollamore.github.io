@@ -144,7 +144,7 @@
           "skills": ["Chemistry"]
         },
         {
-          "title": "Chem Lab 3<br>Coordination Compound",
+          "title": "Chem Lab 3<br>Coord. Compound",
           "image": "assets/images/chem-lab-3/9.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
@@ -161,8 +161,8 @@
     },
     {
       "season": "Winter",
-      "year": 2022,
-      "title": "Bio Lab",
+      "year": 2023,
+      "title": "Biology Lab",
       "logo": "assets/images/bio-lab-2/34.jpg",
       "shortDescription": "In one study, I used a drone and bluetooth thermometer to study the effect of elevation on air temperature. In another, I studied an application of Laminar Flow: the effect of distance from shore on surface current.",
       "hideReadMore": false,
@@ -196,7 +196,7 @@
           "skills": ["AP Biology", "Lab Documentation"]
         },
         {
-          "title": "Origami Extra Credit",
+          "title": "Origami Project Extra Credit",
           "image": "assets/images/origami-thumbnail.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
