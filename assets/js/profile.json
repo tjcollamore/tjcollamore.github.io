@@ -185,18 +185,21 @@
   "essays": [
     {
       "title": "Left Behind",
+      "tagline": "On military ethics and loyalty",
       "description": "A research paper examining the moral and strategic consequences of the U.S. military’s 'No Man Left Behind' policy, dedicated to my grand-uncle <a href=\"https://dpaa-mil.sites.crmforce.mil/dpaaProfile?id=a0Jt000000sFDegEAG\" target=\"_blank\" rel=\"noopener noreferrer\">Allan P. Collamore</a>."
       "file": "assets/text/TJCollamore-LeftBehind.pdf",
       "thumbnail": "assets/images/leftbehind.png"
     },
     {
       "title": "A Microcosm of America’s Grandeur and Shame",
+      "tagline": "On American identity and contradiction",
       "description": "An analytical essay using the 1904 St. Louis World’s Fair as a lens to examine how America’s celebration of progress and innovation coexisted with its legacy of racial hierarchy and imperialism—revealing a microcosm of both the nation’s grandeur and its shame.",
       "file": "assets/text/TJCollamore-AmericaMicrocosm.pdf",
       "thumbnail": "assets/images/americamicrocosm.png"
     },
     {
       "title": "The Imperfect Green Revolution in India",
+      "tagline": "On agricultural reform and inequality",
       "description": "A research paper assessing how the Green Revolution transformed India’s agriculture, reducing famine while deepening social and environmental inequalities.",
       "file": "assets/text/TJCollamore-GreenRevolution.pdf",
       "thumbnail": "assets/images/greenrevolution.png"
