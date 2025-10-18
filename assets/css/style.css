@@ -162,6 +162,9 @@ nav li + li::before {
   width: 60px;
   height: auto;
 }
+.timeline-logo {
+  display: none;
+}
 .timeline-date {
   font-size: 0.875rem;
   color: var(--muted);
