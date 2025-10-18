@@ -13,9 +13,9 @@
     {
       "season": "Summer",
       "year": 2025,
-      "title": "Blackjack",
+      "title": "Blackjack (Personal) & AI Neural Network (Tufts University)",
       "logo": "assets/images/blackjack.png",
-      "shortDescription": "Designed and implemented a mostly full-featured Blackjack game in Java. Game includes an 8-deck shoe, card shuffling, hit/stay/double/split/surrender logic, betting, dealer play, win detection, and bankroll. Playable only via desktop Java due to GUI requirements. (I still need to port to JavaScript.) I purposefully only used AI for UI elements, as my goal was to practice more advanced object-oriented programming.",
+      "shortDescription": "Designed and implemented a mostly full-featured Blackjack game in Java, and leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an artificial neural network",
       "hideReadMore": false,
       "projects": [
         {
@@ -26,7 +26,7 @@
           "description": [
             "Designed and implemented a mostly full-featured Blackjack game in Java.",
             "Game includes an 8-deck shoe, card shuffling, hit/stay/double/split/surrender logic, betting, dealer play, win detection, and bankroll.",
-            "Playable only via desktop Java due to GUI requirements. (I still need to port to JavaScript.)",
+            "Playable only via desktop Java due to GUI requirements. (I still need to port to React.)",
             "I purposefully only used AI for UI elements, as my goal was to practice more advanced object-oriented programming."
           ],
           "skills": ["Java", "JavaFX", "Game Logic", "Object-oriented Design", "Recursion"]
