@@ -6,14 +6,13 @@
       "season": "Fall",
       "year": 2025,
       "title": "My website",
-      "logo": "assets/images/blackjack.png",
+      "logo": "assets/images/fall2025.png",
       "shortDescription": "Managed to make this while taking 6 APs, being a dedicated XC-captain, and applying to colleges!",
       "hideReadMore": true
     },
     {
       "season": "Summer",
       "year": 2025,
-      "end": "Present",
       "title": "Blackjack",
       "logo": "assets/images/blackjack.png",
       "shortDescription": "Designed and implemented a mostly full-featured Blackjack game in Java. Game includes an 8-deck shoe, card shuffling, hit/stay/double/split/surrender logic, betting, dealer play, win detection, and bankroll. Playable only via desktop Java due to GUI requirements. (I still need to port to JavaScript.) I purposefully only used AI for UI elements, as my goal was to practice more advanced object-oriented programming.",
@@ -30,7 +29,17 @@
             "Playable only via desktop Java due to GUI requirements. (I still need to port to JavaScript.)",
             "I purposefully only used AI for UI elements, as my goal was to practice more advanced object-oriented programming."
           ],
-          "skills": ["Java", "JavaFX", "Game Logic", "Object-oriented design", "Recursion"]
+          "skills": ["Java", "JavaFX", "Game Logic", "Object-oriented Design", "Recursion"]
+        },
+        {
+          "title": "Neural Network (Python)",
+          "image": "assets/images/tufts.png",
+          "buttonLabel": "View Clip",
+          "embed": "<div class='tufts-video-wrapper'><video src='assets/images/tufts.mp4' controls autoplay muted playsinline></video></div>",
+          "description": [
+            "As part of a summer program at Tufts, leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an rtificial neural network"
+          ],
+          "skills": ["Python", "AI", "Reinforcement Learning", "Neural Networks"]
         }
       ]
     },
