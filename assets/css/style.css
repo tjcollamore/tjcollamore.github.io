@@ -473,3 +473,54 @@ nav li + li::before {
   flex-direction: column;
   flex-grow: 1;
 }
+
+/* ===== About / Hero Section ===== */
+.intro-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.intro-text {
+  flex: 1 1 350px;
+}
+
+.intro-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--fg);
+}
+
+.intro-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.intro-buttons button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  margin-right: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background var(--transition);
+}
+
+.intro-buttons button:hover {
+  background: #357abd;
+}
+
+.about-bio {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--muted);
+  white-space: pre-wrap;
+}
