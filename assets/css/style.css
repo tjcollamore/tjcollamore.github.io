@@ -39,6 +39,12 @@ body {
     padding: 0 1rem;
   }
 }
+@media (max-width: 600px) {
+  .title-group {
+    align-items: center;
+    text-align: center;
+  }
+}
 
 /* 1) Make the header itself white across the entire viewport */
 header {
@@ -57,11 +63,31 @@ header .container {
   justify-content: space-between;
   padding: 1rem;
 }
+.title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
 
+#page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--fg);
+  margin-bottom: 0.25rem;
+}
 #page-title {
   flex: 0 0 auto;     /* don’t grow or shrink */
   margin: 0;           /* no extra bottom margin */
 }
+
+#page-tagline {
+  font-size: 1rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0;
+}
+
 
 nav {
   flex: 0 1 auto;      /* take only as much space as needed */
