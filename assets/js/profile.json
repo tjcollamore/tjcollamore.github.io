@@ -147,8 +147,8 @@
   "essays": [
     {
       "title": "Left Behind",
-      "description": "A research paper analyzing the moral and strategic implications of the U.S. military's 'No Man Left Behind' policy, personalized by my grand-uncle <a href="https://dpaa-mil.sites.crmforce.mil/dpaaProfile?id=a0Jt000000sFDegEAG">Allan P Collamore</a>",
-      "file": "assests/text/TJCollamore-LeftBehind.pdf"
+      "description": "A research paper analyzing the moral and strategic implications of the U.S. military's 'No Man Left Behind' policy, personalized by my grand-uncle <a href=\\\"https://dpaa-mil.sites.crmforce.mil/dpaaProfile?id=a0Jt000000sFDegEAG\\\">Allan P Collamore</a>.",
+      "file": "assets/text/TJCollamore-LeftBehind.pdf"
     },
     {
       "title": "A Microcosm of America's Grandeur and Shamefulness",
