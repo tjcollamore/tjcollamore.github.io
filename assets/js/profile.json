@@ -55,9 +55,19 @@
           "title": "Pac-Man (MIT Scratch)",
           "image": "assets/images/pacman.png",
           "buttonLabel": "Play",
-          "embed": "<iframe src='https://scratch.mit.edu/projects/820765977/embed' allowtransparency='true' width='485' height='402' frameborder='0' scrolling='no' allowfullscreen></iframe>",
+          "embed": "<iframe src='https://scratch.mit.edu/projects/820510104/embed' allowtransparency='true' width='485' height='402' frameborder='0' scrolling='no' allowfullscreen></iframe>",
           "description": [
-            "Recreated the classic Pac-Man arcade game in MIT Scratch."
+            "This is a customized Pac-Man game comprised of 3 unique levels. Use the up, down, left, and right arrow keys to control Pac-Man. Collect all of the Food scattered throughout the map in order to advance to the next level within 90 seconds. There are two ghosts (Pinky and Clyde) that are programmed to randomly move through hallways. A second player can use the "A" and "D" controls to tell Clyde where to go relative to Clyde's position, and override the randomness of the movement. Each time you win a level, the next level will increase the speed for Pac-Man and the ghosts. Complete the 3 levels to win the game."
+          ],
+          "skills": ["Scratch", "Game Logic", "UI Design", "Animations"]
+        },
+        {
+          "title": "Feed-the-Hole (MIT Scratch)",
+          "image": "assets/images/feedthehole.png",
+          "buttonLabel": "Play",
+          "embed": "<iframe src='https://scratch.mit.edu/projects/815037201/embed' allowtransparency='true' width='485' height='402' frameborder='0' scrolling='no' allowfullscreen></iframe>",
+          "description": [
+            "'Feed The Hole' is similar to the common arcade game named 'Pop the Lock'. Instead of rotating in a circle this game goes side to side. Your objective is to precisely click the 'Space' key when the orange oval is over the black hole on the bar. Feed the oval into the hole 5 times within 20 seconds to gain 5 points and complete the level. Complete 3 levels to win the game."
           ],
           "skills": ["Scratch", "Game Logic", "UI Design", "Animations"]
         }
