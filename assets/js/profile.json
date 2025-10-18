@@ -43,6 +43,71 @@
       ]
     },
     {
+      "season": "Spring",
+      "year": 2025,
+      "title": "AP Chemistry",
+      "shortDescription": "Created hand-written 178-page lab notebook for AP Chem.",
+      "hideReadMore": false,
+      "projects": [
+        {
+          "title": "Chem Lab 5<br>Molar Mass",
+          "image": "assets/images/chem-lab-5/1.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/chem-lab-5",
+            "pageCount": 17,
+            "extension": "jpg"
+          },
+          "description": [
+            "Molar mass determination by vapor density"
+          ],
+          "skills": ["Chemistry"]
+        },
+        {
+          "title": "Chem Lab 6<br>Gravimetric Analysis",
+          "image": "assets/images/chem-lab-6/4.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/chem-lab-6",
+            "pageCount": 18,
+            "extension": "jpg"
+          },
+          "description": [
+            "Gravimetrically analyze a Group 1 metal carbonate compound to determine its identity."
+          ],
+          "skills": ["Chemistry"]
+        },
+        {
+          "title": "Chem Lab 7<br>Chemical Kinetics",
+          "image": "assets/images/chem-lab-7/20.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/chem-lab-7",
+            "pageCount": 27,
+            "extension": "jpg"
+          },
+          "description": [
+            "Determine the rate law of a chemical reaction, as well as its activation energy."
+          ],
+          "skills": ["Chemistry"]
+        },
+        {
+          "title": "Chem Lab 9<br>Acid-Base Titration",
+          "image": "assets/images/chem-lab-9/16.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/chem-lab-9",
+            "pageCount": 34,
+            "extension": "jpg"
+          },
+          "description": [
+            "Practice titration of a strong acid with a strong base, a volumetric technique to determine the amount of acid in an unknown sample."
+          ],
+          "skills": ["Chemistry"]
+        }
+      ]
+    },
+    {
       "season": "Fall",
       "year": 2024,
       "title": "AP Chemistry",
