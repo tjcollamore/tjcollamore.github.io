@@ -522,11 +522,12 @@ nav li + li::before {
 .intro-hero {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center;        /* ✅ centers photo + text vertically */
   justify-content: space-between;
   gap: 2rem;
   margin: 2rem 0;
 }
+
 
 .intro-text {
   flex: 1 1 350px;
@@ -544,6 +545,7 @@ nav li + li::before {
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex-shrink: 0;
 }
 
 .intro-buttons button {
