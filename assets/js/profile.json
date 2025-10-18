@@ -67,8 +67,8 @@
       "season": "Fall",
       "year": 2022,
       "title": "Bio Lab",
-      "logo": "images/image4.png",
-      "shortDescription": "description 4",
+      "logo": "assets/images/bio-lab-1/16.jpg",
+      "shortDescription": "Wrote an image processing program in C# to detect tar spots in leaves and calculate its effect on chlorophyll concentration of surrounding areas.",
       "hideReadMore": false,
       "projects": [
         {
