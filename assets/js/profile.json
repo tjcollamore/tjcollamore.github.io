@@ -233,7 +233,7 @@
             "A Google Slides presentation exploring loan amortizations. Subsequently used by the school dean to teach students financial literacy."
           ],
           "skills": ["Presentation", "Communication"],
-          "embed": "<button class='project-read-more-btn' onclick=\"openPdfModal('assets/text/TJCollamore-LoanAmortization.pdf', 'My Research Presentation')\">View Slides</button>"
+          "file": "assets/text/TJCollamore-LoanAmortization.pdf"
         }
       ]
     },
@@ -252,7 +252,7 @@
             "A project whereby we created a carnival game, including numerous custom-designed 3D-printed interlocking parts, and analyzed the probability of winning."
           ],
           "skills": ["Presentation", "Communication", "3D Printing", "Game Design"],
-          "embed": "<button class='project-read-more-btn' onclick=\"openPdfModal('assets/text/TJCollamore-stats-carnival.pdf', 'My Research Presentation')\">View Slides</button>"
+          "file": "assets/text/TJCollamore-stats-carnival.pdf"
         }
       ]
     },
