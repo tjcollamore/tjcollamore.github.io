@@ -20,7 +20,7 @@
         {
           "title": "Blackjack<br>(Java)",
           "image": "assets/images/blackjack.png",
-          "buttonLabel": "View Clip",
+          "buttonLabel": "Play Clip",
           "embed": "<div class='blackjack-video-wrapper'><video src='assets/images/BlackjackClip.mp4' controls autoplay muted playsinline></video></div>",
           "description": [
             "Designed and implemented a mostly full-featured Blackjack game in Java to practice advanced OOP design patterns, state management, and recursion in a game environment.",
@@ -33,7 +33,7 @@
         {
           "title": "Neural Network (Python)",
           "image": "assets/images/tufts.png",
-          "buttonLabel": "View Clip",
+          "buttonLabel": "Play Clip",
           "embed": "<div class='tufts-video-wrapper'><video src='assets/images/tufts.mov' controls autoplay playsinline></video></div>",
           "description": [
             "As part of a summer program at Tufts, leveraged AI to develop a self-driving race car simulation where a neural network learned optimal steering and acceleration using reinforcement learning. Tuned reward functions and visualized model convergence."
