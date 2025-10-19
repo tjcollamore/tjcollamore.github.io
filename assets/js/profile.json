@@ -231,7 +231,7 @@
           "buttonLabel": "View Notebook",
           "notebook": {
             "folder": "assets/images/origami",
-            "pageCount": 5,
+            "pageCount": 6,
             "extension": "jpg"
           },
           "description": [
