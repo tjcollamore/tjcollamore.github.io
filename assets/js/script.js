@@ -44,14 +44,20 @@ function openProjectModalFromArray(array, expIdx, projIdx) {
   const proj = array[expIdx].projects[projIdx];
   const body = document.getElementById("modal-body");
 
+  // Case 1: PDF file (new logic)
+  if (proj.file && proj.file.endsWith(".pdf")) {
+    openPdfModal(proj.file, proj.title);
+    return; // Skip building a second modal layer
+  }
+
   let embedHtml = "";
 
-  // Case 1: embedded video/game
+  // Case 2: embedded video/game
   if (proj.embed) {
     embedHtml = `<div class="modal-embed">${proj.embed}</div><hr>`;
   }
 
-  // Case 2: lab notebook viewer
+  // Case 3: lab notebook viewer
   if (proj.notebook) {
     let currentPage = 1;
     const { folder, pageCount, extension } = proj.notebook;
