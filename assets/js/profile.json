@@ -227,7 +227,7 @@
         },
         {
           "title": "Loan Amortization Project",
-          "image": "assets/images/LoadAmortization.png",
+          "image": "assets/images/LoanAmortization.png",
           "buttonLabel": "View Slides",
           "description": [
             "A Google Slides presentation exploring loan amortizations. Subsequently used by the school dean to teach students financial literacy."
