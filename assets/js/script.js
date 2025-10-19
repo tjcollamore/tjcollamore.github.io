@@ -255,7 +255,7 @@ fetch('assets/js/profile.json')
           <h2>Hi,</h2>
           <p>${data.home}</p>
           <div class="intro-buttons">
-            <button onclick="window.location.href='assets/text/TJCollamoree-resume.pdf'">
+            <button onclick="window.location.href='assets/text/TJCollamore-resume.pdf'">
               <i class="fa-regular fa-file-lines"></i> Resume
             </button>
             <button onclick="window.open('https://www.instagram.com/tj.collamore/')">
