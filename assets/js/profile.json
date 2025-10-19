@@ -394,22 +394,61 @@
       "title": "Left Behind",
       "tagline": "On military ethics and loyalty",
       "description": "A research paper examining the moral and strategic consequences of the U.S. military’s 'No Man Left Behind' policy, dedicated to my grand-uncle <a href=\"https://dpaa-mil.sites.crmforce.mil/dpaaProfile?id=a0Jt000000sFDegEAG\" target=\"_blank\" rel=\"noopener noreferrer\">Allan P. Collamore</a>.",
-      "file": "assets/text/TJCollamore-LeftBehind.pdf",
-      "thumbnail": "assets/images/leftbehind.png"
+      "file": "assets/text/TJCollamore-LeftBehind.pdf"
     },
     {
       "title": "A Microcosm of America’s Grandeur and Shame",
       "tagline": "On American identity and contradiction",
       "description": "An analytical essay using the 1904 St. Louis World’s Fair as a lens to examine how America’s celebration of progress and innovation coexisted with its legacy of racial hierarchy and imperialism—revealing a microcosm of both the nation’s grandeur and its shame.",
-      "file": "assets/text/TJCollamore-AmericaMicrocosm.pdf",
-      "thumbnail": "assets/images/americamicrocosm.png"
+      "file": "assets/text/TJCollamore-AmericaMicrocosm.pdf"
+    },
+    {
+      "title": "Pitfalls of Chasing an Unattainabile Dream on Social Media",
+      "tagline": "On illusion, aspiration, and the emptiness behind perfection",
+      "description": "A modern analysis of F. Scott Fitzgerald’s The Great Gatsby connecting 1920s façades of wealth, love, and beauty to today’s social media culture, revealing how the pursuit of curated perfection leads not to fulfillment, but to disillusionment and isolation.",
+      "file": "assets/text/TJCollamore-gatsby.pdf"
     },
     {
       "title": "The Imperfect Green Revolution in India",
       "tagline": "On agricultural reform and inequality",
       "description": "A research paper assessing how the Green Revolution transformed India’s agriculture, reducing famine while deepening social and environmental inequalities.",
-      "file": "assets/text/TJCollamore-GreenRevolution.pdf",
-      "thumbnail": "assets/images/greenrevolution.png"
-    }
+      "file": "assets/text/TJCollamore-GreenRevolution.pdf"
+    },
+    {
+      "title": "Freedom from an Inescapable Prison of Society",
+      "tagline": "On confinement, awakening, and the cost of freedom",
+      "description": "An analytical essay on Kate Chopin’s The Awakening, exploring how Edna Pontellier’s struggle against the restrictive traditions of 1890s society (through motifs of birds, dreams, and the sea) reveals that true independence for women in her era was both revolutionary and tragically unattainable.",
+      "file": "assets/text/TJCollamore-awakening.pdf"
+    },
+    {
+      "title": "Humanity in the Hands of the Government",
+      "tagline": "On control, conformity, and the loss of humanity",
+      "description": "An analytical essay on Aldous Huxley’s Brave New World, examining how government overreach and technological conditioning strip individuals of freedom, emotion, and identity, serving as a warning against trading authentic humanity for comfort and control.",
+      "file": "assets/text/TJCollamore-bravenewworld.pdf"
+    },
+    {
+      "title": "Stuck in the Quintessence of Childhood",
+      "tagline": "On preservation, innocence, and the necessity of change",
+      "description": "A literary analysis of J.D. Salinger’s The Catcher in the Rye, exploring how Holden Caulfield’s desire to preserve childhood innocence and resist risk reveals the futility of stagnation, and how embracing change is essential for growth and fulfillment.",
+      "file": "assets/text/TJCollamore-catcher.pdf"
+    },
+    {
+      "title": "Napoloean Perpetuated the Goals of Enlightenment as a Power-Hungry Tyrant",
+      "tagline": "On ambition, reform, and the paradox of enlightened rule",
+      "description": "An essay exploring how Napoleon Bonaparte advanced Enlightenment ideals of progress, liberty, and reason through sweeping governmental, economic, and legal reforms, while simultaneously betraying them through his authoritarian ambition and conquest across Europe.",
+      "file": "assets/text/TJCollamore-napolean.pdf"
+    },
+    {
+      "title": "The French Revolution Betrayed the Ideals of Liberty and Equality",
+      "tagline": "On revolution, reason, and the failure to uphold ideals",
+      "description": "A historical analysis arguing that the French Revolution, though inspired by Enlightenment principles of liberty and equality, ultimately betrayed them through chaos, violence, and exclusion—culminating in the Great Fear, the Reign of Terror, and the denial of women’s rights.",
+      "file": "assets/text/TJCollamore-frenchrevolution.pdf"
+    },
+    {
+      "title": "Generational Effects of Racial Discrimination",
+      "tagline": "On systemic prejudice and inherited inequality",
+      "description": "An analytical essay examining how To Kill a Mockingbird reflects the enduring link between racial discrimination and generational inequity, connecting Atticus Finch’s defense of Tom Robinson to real-world injustices like Jim Crow laws and Japanese internment.",
+      "file": "assets/text/TJCollamore-tokillamockingbird.pdf"
+    },
   ]
 }
