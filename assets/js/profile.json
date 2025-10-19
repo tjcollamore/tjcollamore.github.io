@@ -238,6 +238,25 @@
       ]
     },
     {
+      "season": "Spring",
+      "year": 2023,
+      "title": "AP Statistics",
+      "shortDescription": "",
+      "hideReadMore": false,
+      "projects": [
+        {
+          "title": "Carnival Game Project",
+          "image": "assets/images/stats-carnival.jpg",
+          "buttonLabel": "View Slides",
+          "description": [
+            "A project whereby we created a carnival game, including numerous custom-designed 3D-printed interlocking parts, and analyzed the statistics of winning."
+          ],
+          "skills": ["Presentation", "Communication", "3D Printing", "Game Design"],
+          "embed": "<button class='project-read-more-btn' onclick=\"openPdfModal('assets/text/TJCollamore-stats-carnival.pdf', 'My Research Presentation')\">View Slides</button>"
+        }
+      ]
+    },
+    {
       "season": "Winter",
       "year": 2023,
       "title": "Biology Lab",
