@@ -190,6 +190,58 @@
       ]
     },
     {
+      "season": "Spring",
+      "year": 2023,
+      "title": "Geometry",
+      "logo": "assets/images/pacman.png",
+      "shortDescription": "",
+      "hideReadMore": false,
+      "projects": [
+        {
+          "title": "Mario Project 1",
+          "image": "assets/images/mario-1/1.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/mario-1",
+            "pageCount": 3,
+            "extension": "jpg"
+          },
+          "description": [
+            ""
+          ],
+          "skills": [""]
+        },
+        {
+          "title": "Mario Project 2",
+          "image": "assets/images/mario-2/1.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/mario-2",
+            "pageCount": 2,
+            "extension": "jpg"
+          },
+          "description": [
+            ""
+          ],
+          "skills": [""]
+        },
+        {
+          "title": "Origami Project Extra Credit",
+          "image": "assets/images/origami-thumbnail.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/origami",
+            "pageCount": 6,
+            "extension": "jpg"
+          },
+          "description": [
+            "For a Geometry extra credit project, created an origami comprising 640 individual units involving over 10,000 folds."
+          ],
+          "skills": ["Origami"]
+        }
+      ]
+    },
+    {
       "season": "Winter",
       "year": 2023,
       "title": "Biology Lab",
@@ -224,20 +276,6 @@
             "Studied an application of Laminar Flow: the effect of distance from shore on surface current."
           ],
           "skills": ["Biology", "Lab Documentation"]
-        },
-        {
-          "title": "Origami Project Extra Credit",
-          "image": "assets/images/origami-thumbnail.jpg",
-          "buttonLabel": "View Notebook",
-          "notebook": {
-            "folder": "assets/images/origami",
-            "pageCount": 6,
-            "extension": "jpg"
-          },
-          "description": [
-            "For a Geometry extra credit project, created an origami comprising 640 individual units involving over 10,000 folds."
-          ],
-          "skills": ["Origami"]
         }
       ]
     },
