@@ -200,7 +200,7 @@
         {
           "title": "Mario Project 1",
           "image": "assets/images/mario-1/1.jpg",
-          "buttonLabel": "View Notebook",
+          "buttonLabel": "View Photos",
           "notebook": {
             "folder": "assets/images/mario-1",
             "pageCount": 3,
@@ -214,7 +214,7 @@
         {
           "title": "Mario Project 2",
           "image": "assets/images/mario-2/1.jpg",
-          "buttonLabel": "View Notebook",
+          "buttonLabel": "View Photos",
           "notebook": {
             "folder": "assets/images/mario-2",
             "pageCount": 2,
@@ -226,9 +226,9 @@
           "skills": [""]
         },
         {
-          "title": "Origami Project Extra Credit",
+          "title": "Origami Project",
           "image": "assets/images/origami-thumbnail.jpg",
-          "buttonLabel": "View Notebook",
+          "buttonLabel": "View Photos",
           "notebook": {
             "folder": "assets/images/origami",
             "pageCount": 6,
