@@ -148,7 +148,7 @@ function closePdfModal() {
 
 function renderTimeline(containerId, dataArray) {
   const section = document.getElementById(containerId);
-  const seasonOrder = { Spring: 1, Summer: 2, Fall: 3, Winter: 4, Present: 5 };
+  const seasonOrder = { Winter: 1, Spring: 2, Summer: 3, Fall: 4, Present: 5 };
   const currentYear = new Date().getFullYear();
 
   const sorted = dataArray.sort((a, b) => {
@@ -163,11 +163,9 @@ function renderTimeline(containerId, dataArray) {
     if (aFuture && !bFuture) return -1;
     if (!aFuture && bFuture) return 1;
 
-    if (aFuture && bFuture) {
-      return (a.year - b.year) || (seasonOrder[a.season] - seasonOrder[b.season]);
-    } else {
-      return (b.year - a.year) || (seasonOrder[b.season] - seasonOrder[a.season]);
-    }
+    // Sort by year descending, then by seasonOrder descending
+    if (a.year !== b.year) return b.year - a.year;
+    return seasonOrder[b.season] - seasonOrder[a.season];
   });
 
   section.innerHTML = `

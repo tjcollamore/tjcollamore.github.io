@@ -1,5 +1,5 @@
 {
-  "home": "I'm a student-athlete at Westford Academy who thrives on challenge and creativity—whether leading cross-country, coding late into the night, or bringing ideas to life through engineering and design.",
+  "home": "I’m a student-athlete at Westford Academy who thrives on challenge and creativity, whether leading cross-country, coding late into the night, or bringing ideas to life through engineering and design. I consistently approach every project as an opportunity to build something meaningful, to push past “good enough,” and to use the time I have to create work that lasts.",
   "projects": [
     {
       "season": "Fall",
@@ -34,7 +34,7 @@
           "title": "Neural Network (Python)",
           "image": "assets/images/tufts.png",
           "buttonLabel": "View Clip",
-          "embed": "<div class='tufts-video-wrapper'><video src='assets/images/tufts.mov' controls autoplay muted playsinline></video></div>",
+          "embed": "<div class='tufts-video-wrapper'><video src='assets/images/tufts.mov' controls autoplay playsinline></video></div>",
           "description": [
             "As part of a summer program at Tufts, leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an artificial neural network."
           ],
@@ -190,6 +190,58 @@
       ]
     },
     {
+      "season": "Spring",
+      "year": 2023,
+      "title": "Geometry",
+      "logo": "assets/images/pacman.png",
+      "shortDescription": "",
+      "hideReadMore": false,
+      "projects": [
+        {
+          "title": "Mario Project 1",
+          "image": "assets/images/mario-1/1.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/mario-1",
+            "pageCount": 3,
+            "extension": "jpg"
+          },
+          "description": [
+            ""
+          ],
+          "skills": [""]
+        },
+        {
+          "title": "Mario Project 2",
+          "image": "assets/images/mario-2/1.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/mario-2",
+            "pageCount": 2,
+            "extension": "jpg"
+          },
+          "description": [
+            ""
+          ],
+          "skills": [""]
+        },
+        {
+          "title": "Origami Project Extra Credit",
+          "image": "assets/images/origami-thumbnail.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/origami",
+            "pageCount": 6,
+            "extension": "jpg"
+          },
+          "description": [
+            "For a Geometry extra credit project, created an origami comprising 640 individual units involving over 10,000 folds."
+          ],
+          "skills": ["Origami"]
+        }
+      ]
+    },
+    {
       "season": "Winter",
       "year": 2023,
       "title": "Biology Lab",
@@ -198,7 +250,7 @@
       "hideReadMore": false,
       "projects": [
         {
-          "title": "AP Biology Lab Notebook",
+          "title": "Biology Lab Notebook",
           "image": "assets/images/bio-lab-2/34.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
@@ -209,10 +261,10 @@
           "description": [
             "Used a drone and bluetooth thermometer to study the effect of elevation on air temperature."
           ],
-          "skills": ["AP Biology", "Lab Documentation"]
+          "skills": ["Biology", "Lab Documentation"]
         },
         {
-          "title": "AP Biology Lab Notebook",
+          "title": "Biology Lab Notebook",
           "image": "assets/images/bio-lab-3/12.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
@@ -223,21 +275,7 @@
           "description": [
             "Studied an application of Laminar Flow: the effect of distance from shore on surface current."
           ],
-          "skills": ["AP Biology", "Lab Documentation"]
-        },
-        {
-          "title": "Origami Project Extra Credit",
-          "image": "assets/images/origami-thumbnail.jpg",
-          "buttonLabel": "View Notebook",
-          "notebook": {
-            "folder": "assets/images/origami",
-            "pageCount": 5,
-            "extension": "jpg"
-          },
-          "description": [
-            "For a Geometry extra credit project, created an origami comprising 640 individual units involving over 10,000 folds."
-          ],
-          "skills": ["Origami"]
+          "skills": ["Biology", "Lab Documentation"]
         }
       ]
     },
@@ -250,7 +288,7 @@
       "hideReadMore": false,
       "projects": [
         {
-          "title": "AP Biology Lab Notebook",
+          "title": "Biology Lab Notebook",
           "image": "assets/images/bio-lab-1/16.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
@@ -259,9 +297,9 @@
             "extension": "jpg"
           },
           "description": [
-            "Scanned pages from my AP Bio lab notebook, where I wrote a program to help me study the effect of tar spot has on the chlorophyll concentration of leaves."
+            "Scanned pages from my Honors Bio lab notebook, where I wrote a program to help me study the effect of tar spot has on the chlorophyll concentration of leaves."
           ],
-          "skills": ["AP Biology", "Lab Documentation", "C#"]
+          "skills": ["Biology", "Lab Documentation", "C#"]
         }
       ]
     }

@@ -130,6 +130,31 @@ nav li + li::before {
   background: rgba(74,144,226,0.15);
 }
 
+@media (max-width: 700px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap; /* allow wrapping */
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  nav li + li::before {
+    display: none; /* remove the bullet separators */
+  }
+
+  .nav-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+
 /* tab handling */
 .tab { display: none; }
 .tab.active { display: block; }
@@ -635,4 +660,24 @@ nav li + li::before {
   border: none;
   border-radius: var(--radius);
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 600px) {
+  /* Keep modals fully visible on mobile */
+  .modal-content,
+  .pdf-modal-content {
+    width: 95%;
+    max-width: 95%;
+    max-height: 85vh;
+    padding: 1rem;
+  }
+
+  .modal-embed iframe,
+  #pdf-viewer-body iframe {
+    height: 60vh; /* shorter for mobile */
+  }
+
+  .pdf-modal-content h2 {
+    font-size: 1rem;
+  }
 }
