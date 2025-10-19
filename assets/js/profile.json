@@ -226,18 +226,14 @@
           "skills": ["Geometry", "Design", "Measurement", "Creativity"]
         },
         {
-          "title": "Origami Project",
-          "image": "assets/images/origami-thumbnail.jpg",
-          "buttonLabel": "View Photos",
-          "notebook": {
-            "folder": "assets/images/origami",
-            "pageCount": 6,
-            "extension": "jpg"
-          },
+          "title": "Loan Amortization Project",
+          "image": "assets/images/LoadAmortization.jpg",
+          "buttonLabel": "View Slides",
           "description": [
-            "Constructed a modular origami sphere from 640 interlocking units involving over 10,000 folds, illustrating geometric symmetry, patience, and fine-motor precision."
+            "A Google Slides presentation exploring loan amortizations. Subsequently used by the school dean to teach students financial literacy."
           ],
-          "skills": ["Geometry", "Symmetry", "Precision", "Design Thinking"]
+          "skills": ["Presentation", "Communication"],
+          "embed": "<button class='project-read-more-btn' onclick=\"openPdfModal('assets/text/TJCollamore-LoanAmortization.pdf', 'My Research Presentation')\">View Slides</button>"
         }
       ]
     },
