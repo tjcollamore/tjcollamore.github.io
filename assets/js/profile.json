@@ -20,7 +20,7 @@
         {
           "title": "Blackjack<br>(Java)",
           "image": "assets/images/blackjack.png",
-          "buttonLabel": "View Clip",
+          "buttonLabel": "Play Clip",
           "embed": "<div class='blackjack-video-wrapper'><video src='assets/images/BlackjackClip.mp4' controls autoplay muted playsinline></video></div>",
           "description": [
             "Designed and implemented a mostly full-featured Blackjack game in Java to practice advanced OOP design patterns, state management, and recursion in a game environment.",
@@ -33,7 +33,7 @@
         {
           "title": "Neural Network (Python)",
           "image": "assets/images/tufts.png",
-          "buttonLabel": "View Clip",
+          "buttonLabel": "Play Clip",
           "embed": "<div class='tufts-video-wrapper'><video src='assets/images/tufts.mov' controls autoplay playsinline></video></div>",
           "description": [
             "As part of a summer program at Tufts, leveraged AI to develop a self-driving race car simulation where a neural network learned optimal steering and acceleration using reinforcement learning. Tuned reward functions and visualized model convergence."
@@ -227,7 +227,7 @@
         },
         {
           "title": "Loan Amortization Project",
-          "image": "assets/images/LoadAmortization.png",
+          "image": "assets/images/LoanAmortization.png",
           "buttonLabel": "View Slides",
           "description": [
             "A Google Slides presentation exploring loan amortizations. Subsequently used by the school dean to teach students financial literacy."
@@ -241,7 +241,7 @@
       "season": "Spring",
       "year": 2023,
       "title": "AP Statistics",
-      "shortDescription": "",
+      "shortDescription": "A project whereby we created a carnival game, including numerous custom-designed 3D-printed interlocking parts, and analyzed the probability of winning.",
       "hideReadMore": false,
       "projects": [
         {
@@ -249,7 +249,7 @@
           "image": "assets/images/stats-carnival.jpg",
           "buttonLabel": "View Slides",
           "description": [
-            "A project whereby we created a carnival game, including numerous custom-designed 3D-printed interlocking parts, and analyzed the statistics of winning."
+            "A project whereby we created a carnival game, including numerous custom-designed 3D-printed interlocking parts, and analyzed the probability of winning."
           ],
           "skills": ["Presentation", "Communication", "3D Printing", "Game Design"],
           "embed": "<button class='project-read-more-btn' onclick=\"openPdfModal('assets/text/TJCollamore-stats-carnival.pdf', 'My Research Presentation')\">View Slides</button>"
