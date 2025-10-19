@@ -198,7 +198,7 @@
       "hideReadMore": false,
       "projects": [
         {
-          "title": "AP Biology Lab Notebook",
+          "title": "Biology Lab Notebook",
           "image": "assets/images/bio-lab-2/34.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
@@ -209,10 +209,10 @@
           "description": [
             "Used a drone and bluetooth thermometer to study the effect of elevation on air temperature."
           ],
-          "skills": ["AP Biology", "Lab Documentation"]
+          "skills": ["Biology", "Lab Documentation"]
         },
         {
-          "title": "AP Biology Lab Notebook",
+          "title": "Biology Lab Notebook",
           "image": "assets/images/bio-lab-3/12.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
@@ -223,7 +223,7 @@
           "description": [
             "Studied an application of Laminar Flow: the effect of distance from shore on surface current."
           ],
-          "skills": ["AP Biology", "Lab Documentation"]
+          "skills": ["Biology", "Lab Documentation"]
         },
         {
           "title": "Origami Project Extra Credit",
@@ -250,7 +250,7 @@
       "hideReadMore": false,
       "projects": [
         {
-          "title": "AP Biology Lab Notebook",
+          "title": "Biology Lab Notebook",
           "image": "assets/images/bio-lab-1/16.jpg",
           "buttonLabel": "View Notebook",
           "notebook": {
@@ -259,9 +259,9 @@
             "extension": "jpg"
           },
           "description": [
-            "Scanned pages from my AP Bio lab notebook, where I wrote a program to help me study the effect of tar spot has on the chlorophyll concentration of leaves."
+            "Scanned pages from my Honors Bio lab notebook, where I wrote a program to help me study the effect of tar spot has on the chlorophyll concentration of leaves."
           ],
-          "skills": ["AP Biology", "Lab Documentation", "C#"]
+          "skills": ["Biology", "Lab Documentation", "C#"]
         }
       ]
     }
