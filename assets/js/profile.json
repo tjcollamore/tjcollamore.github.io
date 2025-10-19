@@ -6,7 +6,7 @@
       "year": 2025,
       "title": "This website",
       "logo": "assets/images/fall2025.png",
-      "shortDescription": "I managed to make this website while taking 6 APs, being a dedicated XC-captain, and applying to colleges!",
+      "shortDescription": "Amidst taking 6 AP courses, built and deployed this portfolio site using HTML, CSS, and JavaScript, dynamically rendering project data from JSON and integrating modal content viewers for lab notebooks, essays, and media.",
       "hideReadMore": true
     },
     {
@@ -23,12 +23,12 @@
           "buttonLabel": "View Clip",
           "embed": "<div class='blackjack-video-wrapper'><video src='assets/images/BlackjackClip.mp4' controls autoplay muted playsinline></video></div>",
           "description": [
-            "Designed and implemented a mostly full-featured Blackjack game in Java.",
+            "Designed and implemented a mostly full-featured Blackjack game in Java to practice advanced OOP design patterns, state management, and recursion in a game environment.",
             "Game includes an 8-deck shoe, card shuffling, hit/stay/double/split/surrender logic, betting, dealer play, win detection, and bankroll.",
-            "Playable only via desktop Java due to GUI requirements. (I still need to port to React.)",
+            "Playable only via desktop Java due to GUI requirements. (I still want to port the implementation to React - next summer's project!)",
             "I purposefully only used AI for UI elements, as my goal was to practice more advanced object-oriented programming."
           ],
-          "skills": ["Java", "JavaFX", "Game Logic", "Object-oriented Design", "Recursion"]
+          "skills": ["Java", "JavaFX", "Game Logic", "GUI Design", "Object-oriented Design", "Recursion", "Independent Research"]
         },
         {
           "title": "Neural Network (Python)",
@@ -36,9 +36,9 @@
           "buttonLabel": "View Clip",
           "embed": "<div class='tufts-video-wrapper'><video src='assets/images/tufts.mov' controls autoplay playsinline></video></div>",
           "description": [
-            "As part of a summer program at Tufts, leveraged AI to implement a Race Car simulation using Reinforcement Learning to train an artificial neural network."
+            "As part of a summer program at Tufts, leveraged AI to develop a self-driving race car simulation where a neural network learned optimal steering and acceleration using reinforcement learning. Tuned reward functions and visualized model convergence."
           ],
-          "skills": ["Python", "AI", "Reinforcement Learning", "Neural Networks"]
+          "skills": ["Python", "AI", "Reinforcement Learning", "Neural Networks", "Simulation", "Data Visualization"]
         }
       ]
     },
@@ -61,7 +61,7 @@
           "description": [
             "Molar mass determination by vapor density"
           ],
-          "skills": ["Chemistry"]
+          "skills": ["Chemistry", "Analytical Chemistry", "Data Analysis", "Precision Measurement"]
         },
         {
           "title": "Chem Lab 6<br>Gravimetric Analysis",
@@ -75,7 +75,7 @@
           "description": [
             "Gravimetrically analyze a Group 1 metal carbonate compound to determine its identity."
           ],
-          "skills": ["Chemistry"]
+          "skills": ["Chemistry", "Analytical Chemistry", "Data Analysis", "Precision Measurement"]
         },
         {
           "title": "Chem Lab 7<br>Chemical Kinetics",
@@ -89,7 +89,7 @@
           "description": [
             "Determine the rate law of a chemical reaction, as well as its activation energy."
           ],
-          "skills": ["Chemistry"]
+          "skills": ["Chemistry", "Analytical Chemistry", "Data Analysis", "Precision Measurement"]
         },
         {
           "title": "Chem Lab 9<br>Acid-Base Titration",
@@ -101,9 +101,9 @@
             "extension": "jpg"
           },
           "description": [
-            "Practice titration of a strong acid with a strong base, a volumetric technique to determine the amount of acid in an unknown sample."
+            "Performed precise volumetric titrations to quantify acid concentration in an unknown solution, identifying equivalence point using pH data."
           ],
-          "skills": ["Chemistry"]
+          "skills": ["Chemistry", "Analytical Chemistry", "Data Analysis", "Precision Measurement"]
         }
       ]
     },
@@ -125,9 +125,9 @@
             "extension": "jpg"
           },
           "description": [
-            ""
+            "Introduced to essential lab techniques: precise weighing, solution preparation, and reaction observation."
           ],
-          "skills": ["Chemistry"]
+          "skills": ["Chemistry", "Analytical Chemistry", "Data Analysis", "Precision Measurement"]
         },
         {
           "title": "Chem Lab 2<br>Copper Cycle",
@@ -139,9 +139,9 @@
             "extension": "jpg"
           },
           "description": [
-            ""
+            "Traced copper through multiple chemical reactions, verifying conservation of mass and demonstrating reaction stoichiometry."
           ],
-          "skills": ["Chemistry"]
+          "skills": ["Chemistry", "Analytical Chemistry", "Data Analysis", "Precision Measurement"]
         },
         {
           "title": "Chem Lab 3<br>Coord. Compound",
@@ -155,7 +155,7 @@
           "description": [
             "Gain experience in the process of synthesizing and analyzing a coordination compound."
           ],
-          "skills": ["Chemistry"]
+          "skills": ["Chemistry", "Analytical Chemistry", "Data Analysis", "Precision Measurement"]
         }
       ]
     },
@@ -164,7 +164,7 @@
       "year": 2023,
       "title": "Pac-Man in Scratch",
       "logo": "assets/images/pacman.png",
-      "shortDescription": "Implemented dot collection, 2 ghost enemies, level transitions, 3 levels, scoring, custom board with my initials, and a secret compartment in the 3rd level.",
+      "shortDescription": "Programmed an advanced Pac-Man clone in MIT Scratch with multi-level progression, enemy AI, and custom map design incorporating my initials.",
       "hideReadMore": false,
       "projects": [
         {
@@ -207,9 +207,9 @@
             "extension": "jpg"
           },
           "description": [
-            ""
+            "Modeled geometric transformations using a Mario-themed design challenge to visualize congruence, coordinate systems, similarity, and proportion in real-world structures."
           ],
-          "skills": [""]
+          "skills": ["Geometry", "Design", "Measurement", "Creativity"]
         },
         {
           "title": "Mario Project 2",
@@ -221,9 +221,9 @@
             "extension": "jpg"
           },
           "description": [
-            ""
+            "Modeled geometric transformations using a Mario-themed design challenge to visualize congruence, similarity, and proportion in real-world structures."
           ],
-          "skills": [""]
+          "skills": ["Geometry", "Design", "Measurement", "Creativity"]
         },
         {
           "title": "Origami Project",
@@ -235,9 +235,9 @@
             "extension": "jpg"
           },
           "description": [
-            "For a Geometry extra credit project, created an origami comprising 640 individual units involving over 10,000 folds."
+            "Constructed a modular origami sphere from 640 interlocking units involving over 10,000 folds, illustrating geometric symmetry, patience, and fine-motor precision."
           ],
-          "skills": ["Origami"]
+          "skills": ["Geometry", "Symmetry", "Precision", "Design Thinking"]
         }
       ]
     },
@@ -246,7 +246,7 @@
       "year": 2023,
       "title": "Biology Lab",
       "logo": "assets/images/bio-lab-2/34.jpg",
-      "shortDescription": "In one study, I used a drone and bluetooth thermometer to study the effect of elevation on air temperature. In another, I studied an application of Laminar Flow: the effect of distance from shore on surface current.",
+      "shortDescription": "Designed independent biology experiments integrating technology: used a drone and Bluetooth thermometers to measure temperature gradients with elevation; analyzed laminar flow by measuring surface currents at varying distances from shore.",
       "hideReadMore": false,
       "projects": [
         {
@@ -261,7 +261,7 @@
           "description": [
             "Used a drone and bluetooth thermometer to study the effect of elevation on air temperature."
           ],
-          "skills": ["Biology", "Lab Documentation"]
+          "skills": ["Biology", "Environmental Science", "Data Collection", "Experimental Design", "Technology Integration"]
         },
         {
           "title": "Biology Lab Notebook",
@@ -284,7 +284,7 @@
       "year": 2022,
       "title": "Bio Lab",
       "logo": "assets/images/bio-lab-1/16.jpg",
-      "shortDescription": "Wrote an image processing program in C# to detect tar spots in leaves and calculate its effect on chlorophyll concentration of surrounding areas.",
+      "shortDescription": "Wrote a C# image-processing program to quantify how fungal tar spot affects chlorophyll concentration. Combined biological analysis with computational modeling to enhance accuracy.",
       "hideReadMore": false,
       "projects": [
         {
@@ -297,9 +297,9 @@
             "extension": "jpg"
           },
           "description": [
-            "Scanned pages from my Honors Bio lab notebook, where I wrote a program to help me study the effect of tar spot has on the chlorophyll concentration of leaves."
+            "Wrote a C# image-processing program to quantify how fungal tar spot affects chlorophyll concentration. Combined biological analysis with computational modeling to enhance accuracy."
           ],
-          "skills": ["Biology", "Lab Documentation", "C#"]
+          "skills": ["Biology", "C#", "Image Processing", "Data Analysis", "Computational Modeling"]
         }
       ]
     }
