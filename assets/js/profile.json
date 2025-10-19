@@ -276,13 +276,27 @@
             "Studied an application of Laminar Flow: the effect of distance from shore on surface current."
           ],
           "skills": ["Biology", "Lab Documentation"]
+        },
+        {
+          "title": "Biology Field Study",
+          "image": "assets/images/bio-field-study/10.jpg",
+          "buttonLabel": "View Notebook",
+          "notebook": {
+            "folder": "assets/images/bio-field-study",
+            "pageCount": 12,
+            "extension": "jpg"
+          },
+          "description": [
+            "Observation and documentation of ecosystem"
+          ],
+          "skills": ["Biology", "Field Study"]
         }
       ]
     },
     {
       "season": "Fall",
       "year": 2022,
-      "title": "Bio Lab",
+      "title": "Biology Lab",
       "logo": "assets/images/bio-lab-1/16.jpg",
       "shortDescription": "Wrote a C# image-processing program to quantify how fungal tar spot affects chlorophyll concentration. Combined biological analysis with computational modeling to enhance accuracy.",
       "hideReadMore": false,
