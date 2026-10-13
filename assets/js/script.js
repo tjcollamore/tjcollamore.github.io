@@ -246,24 +246,241 @@ fetch('assets/js/profile.json')
       `).join('');
     }
 
-    // ABOUT
-    const aboutEl = document.getElementById('about');
-    aboutEl.innerHTML = `
-      <div class="intro-hero">
-        <img src="assets/images/profile.jpg" alt="TJ Collamore" class="intro-photo">
-        <div class="intro-text">
-          <h2>Hi,</h2>
-          <p>${data.home}</p>
-          <div class="intro-buttons">
-            <button onclick="window.location.href='assets/text/TJCollamore-resume.pdf'">
-              <i class="fa-regular fa-file-lines"></i> Resume
-            </button>
-            <button onclick="window.open('https://www.instagram.com/tj.collamore/')">
-              <i class="fa-brands fa-instagram"></i> Instagram
-            </button>
-          </div>
-        </div>
-      </div>
-    `;
+// ABOUT
+const aboutEl = document.getElementById('about');
 
+aboutEl.innerHTML = `
+  <div class="intro-hero">
+    <img
+      src="assets/images/profile.jpg"
+      alt="TJ Collamore"
+      class="intro-photo"
+    >
+
+    <div class="intro-text">
+      <h2>Hi,</h2>
+      <p>${data.home}</p>
+
+      <div class="intro-buttons">
+        <button
+          onclick="window.location.href='assets/text/TJCollamore-resume.pdf'"
+        >
+          <i class="fa-regular fa-file-lines"></i>
+          Resume
+        </button>
+
+        <button
+          onclick="window.open('https://www.instagram.com/tj.collamore/')"
+        >
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+<section class="current-project">
+  <div class="current-project-heading">
+    <div>
+      <p class="project-eyebrow">CURRENT PROJECT</p>
+      <h2>TJ's Blackjack</h2>
+    </div>
+
+    <span class="project-status">
+      In Development
+    </span>
+  </div>
+
+  <p class="current-project-summary">
+    A casino-style desktop blackjack game and training tool built in Java
+    and JavaFX. The project combines configurable casino rules, animated
+    gameplay, basic-strategy coaching, Monte Carlo decision analysis, and
+    realistic table interactions in a cross-platform desktop application.
+  </p>
+
+
+  <div class="blackjack-showcase">
+    <div class="blackjack-video-wrapper">
+      <video
+        class="blackjack-video"
+        controls
+        muted
+        playsinline
+        poster="assets/images/blackjack-preview.png"
+      >
+        <source
+          src="assets/video/blackjack-demo.mp4"
+          type="video/mp4"
+        >
+
+        Your browser does not support embedded video.
+      </video>
+    </div>
+
+    <div class="blackjack-overview">
+      <h3>Built as more than a card game</h3>
+
+      <p>
+        TJ's Blackjack began as a project to teach myself Java programming
+        and to tutor others. I developed more than 100 hand-written steps
+        and sub-steps, beginning with classes such as Suit, Rank, Card, Deck,
+        Shoe, and Hand, and gradually building toward larger components such
+        as SceneCreator, Round, and PlayerHandStrategy.
+      </p>
+
+      <p>
+        Once the core gameplay was established, I transitioned to an AI
+        pair-programming workflow, initially for UI development and later for
+        broader feature work. To preserve the educational value of the
+        project, I make all suggested AI edits by hand and review the resulting
+        architecture and behavior.
+      </p>
+
+      <p>
+        The game has since grown into a full desktop application designed for
+        realistic casino-style gameplay, especially for social players with an
+        analytical mindset. Its architecture separates blackjack rules,
+        simulation logic, and JavaFX presentation so the same decision engines
+        can support interactive play, automated simulations, training features,
+        and future native-mobile development.
+      </p>
+
+      <div class="download-buttons">
+        <a
+          class="download-btn primary-download"
+          href="https://github.com/tjcollamore/tj-blackjack-releases/releases/download/v1.0.0/TJ-Blackjack-Windows.zip"
+        >
+          <i class="fa-brands fa-windows"></i>
+          Download for Windows
+        </a>
+
+        <a
+          class="download-btn"
+          href="https://github.com/tjcollamore/tj-blackjack-releases/releases/download/v1.0.0/TJ-Blackjack-macOS.zip"
+        >
+          <i class="fa-brands fa-apple"></i>
+          Download for macOS
+        </a>
+      </div>
+
+      <div class="download-note">
+        <p>
+          <strong>Windows:</strong>
+          Download and unzip the package, then run the application.
+          The build is not yet code-signed, so Windows may display a security
+          warning.
+        </p>
+
+        <p>
+          <strong>macOS:</strong>
+          Download and unzip the package. Because the current build is not yet
+          signed or notarized, macOS may report that the app is damaged or
+          cannot be opened. To run this development build, open Terminal and
+          enter:
+        </p>
+
+        <pre><code>xattr -cr "$HOME/Downloads/TJ's Blackjack.app"</code></pre>
+
+        <p>
+          Then open <strong>TJ's Blackjack</strong> normally from Finder.
+          Apple Developer ID signing and notarization are currently being
+          configured so this extra step will not be required in future builds.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="blackjack-details-grid">
+    <div class="blackjack-detail-card">
+      <h3>
+        <i class="fa-solid fa-code"></i>
+        Technologies
+      </h3>
+
+      <ul>
+        <li>Java</li>
+        <li>JavaFX desktop interface</li>
+        <li>Maven build system</li>
+        <li>Git and GitHub</li>
+        <li>GitHub Actions cross-platform builds</li>
+        <li>Java <code>jpackage</code> desktop packaging</li>
+      </ul>
+    </div>
+
+
+    <div class="blackjack-detail-card">
+      <h3>
+        <i class="fa-solid fa-diagram-project"></i>
+        Architecture & Design
+      </h3>
+
+      <ul>
+        <li>
+          Strategy pattern for player, dealer, and basic-strategy decisions
+        </li>
+
+        <li>
+          Separate game engines for player-round and dealer play
+        </li>
+
+        <li>
+          Listener/callback architecture connecting game logic to animation
+        </li>
+
+        <li>
+          Reusable animation classes for cards, chips, and training signals
+        </li>
+
+        <li>
+          Shared decision logic between live gameplay and simulation
+        </li>
+
+        <li>
+          Configurable game rules through a centralized settings model
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="blackjack-detail-card">
+      <h3>
+        <i class="fa-solid fa-dice"></i>
+        Game Features
+      </h3>
+
+      <ul>
+        <li>Animated cards, chips, payouts, and split hands</li>
+        <li>Multiple table-felt themes</li>
+        <li>1, 2, 6, or 8-deck shoes</li>
+        <li>Hit, stand, double, split, and surrender</li>
+        <li>Double-after-split configuration</li>
+        <li>Dealer hits or stands on soft 17</li>
+        <li>3:2 and 6:5 blackjack payout rules</li>
+        <li>Bankroll and wager management</li>
+        <li>Color-up and casino-style table presentation</li>
+      </ul>
+    </div>
+
+
+    <div class="blackjack-detail-card">
+      <h3>
+        <i class="fa-solid fa-graduation-cap"></i>
+        Training & Analysis
+      </h3>
+
+      <ul>
+        <li>Optional basic-strategy recommendations</li>
+        <li>Single-, double-, and multi-deck strategy logic</li>
+        <li>Decision Help for difficult hands</li>
+        <li>Monte Carlo analysis of available actions</li>
+        <li>Optional real-casino hand-signal animations</li>
+        <li>Training features remain separate from normal gameplay</li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;
+    
 });
