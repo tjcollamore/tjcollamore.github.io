@@ -346,25 +346,35 @@ aboutEl.innerHTML = `
         and future native-mobile development.
       </p>
 
-      <div class="download-buttons">
-        <a
-          class="download-btn primary-download"
-          href="https://github.com/tjcollamore/tj-blackjack-releases/releases/download/v1.0.0/TJ-Blackjack-Windows.zip"
-        >
-          <i class="fa-brands fa-windows"></i>
-          Download for Windows
-        </a>
+<div class="download-buttons">
+  <a
+    class="download-btn primary-download"
+    href="https://github.com/tjcollamore/tj-blackjack-releases/releases/download/v1.0.0/TJ-Blackjack-Windows.zip"
+  >
+    <i class="fa-brands fa-windows"></i>
+    Download for Windows
+  </a>
 
-        <a
-          class="download-btn"
-          href="https://github.com/tjcollamore/tj-blackjack-releases/releases/download/v1.0.0/TJ-Blackjack-macOS.zip"
-        >
-          <i class="fa-brands fa-apple"></i>
-          Download for macOS
-        </a>
-      </div>
+  <a
+    class="download-btn"
+    href="https://github.com/tjcollamore/tj-blackjack-releases/releases/download/v1.0.0/TJ-Blackjack-macOS.zip"
+  >
+    <i class="fa-brands fa-apple"></i>
+    Download for macOS
+  </a>
 
-      <div class="download-note">
+  <a
+    class="download-btn github-btn"
+    href="https://github.com/tjcollamore/tj-blackjack"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i class="fa-brands fa-github"></i>
+    View Source on GitHub
+  </a>
+</div>
+
+<div class="download-note">
         <p>
           <strong>Windows:</strong>
           Download and unzip the package, then run the application.

@@ -765,6 +765,15 @@ nav li + li::before {
   transform: none;
 }
 
+.github-btn {
+  border-color: #333;
+  color: #333;
+}
+
+.github-btn:hover {
+  background: #f2f2f2;
+  color: #111;
+}
 
 /* Overview text */
 
