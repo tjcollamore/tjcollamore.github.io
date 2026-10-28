@@ -349,7 +349,7 @@ aboutEl.innerHTML = `
 <div class="download-buttons">
   <a
     class="download-btn primary-download"
-    href="https://github.com/tjcollamore/tj-blackjack-releases/releases/download/v1.0.0/TJ-Blackjack-Windows.zip"
+    href="https://github.com/tjcollamore/tj-blackjack-releases/releases/download/v2.0.0/TJ-Blackjack-Windows.zip"
   >
     <i class="fa-brands fa-windows"></i>
     Download for Windows
@@ -357,7 +357,7 @@ aboutEl.innerHTML = `
 
   <a
     class="download-btn"
-    href="https://github.com/tjcollamore/tj-blackjack-releases/releases/download/v1.0.0/TJ-Blackjack-macOS.zip"
+    href="https://github.com/tjcollamore/tj-blackjack-releases/releases/download/v2.0.0/TJ-Blackjack-macOS.zip"
   >
     <i class="fa-brands fa-apple"></i>
     Download for macOS
